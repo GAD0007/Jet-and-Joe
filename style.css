@@ -219,7 +219,7 @@ z-index: -10;
     position: absolute;
     width: 200px;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(168, 35, 35);
     z-index: 1000000;
     padding-left: 20px;
 }
@@ -531,6 +531,10 @@ width: 150px;
  
     
 }
+.small-icons{
+    position: relative;
+    bottom: 2px;
+}
 section.team-members{
     margin-left: 5vw;
     margin-right: 5vw;
@@ -542,6 +546,40 @@ section.team-members{
    
    
    border-radius: 0px 0px 8px 8px;
+}
+.figure-img{
+    width: 80%;
+}
+.center-arrival{
+    height: 280px;
+    width: 100%;
+    /* width: 300px; */
+}
+.counter-value{
+    margin: 0px 10px;
+    padding-top: 5px;
+}
+.price-add-to-cart{
+    display: flex;
+    justify-content: space-evenly
+}
+.minus-plus-background{
+    display: flex;
+    background-color: hsl(223, 64%, 98%);
+    height: 35px;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+.minus-mark,.add-mark{
+    width: 2rem;
+    padding: 3px 0px;
+    background-color: transparent;
+    border: none;
+}
+.counter-value-women{
+    margin: 0px 10px;
+    padding-top: 8px;
 }
 figcaption.figure-caption{
    color: rgb(0, 0, 0); 
@@ -728,7 +766,11 @@ span.line{
 }
 .btn1{
     color: white;
-    background-color: #4046FF;
+    background:linear-gradient(
+        135deg,
+        rgba(200, 211, 50, 0.96),
+        rgba(240, 139, 139, 0.96)
+      );
     border-radius: 5px;
     font-size: 14px;
     font-weight: 600;
@@ -922,7 +964,7 @@ a.in-touch{
 }
 
 .experienced{
-    border-left:4px solid #4046FF;
+    border-left:4px solid #a9a9ab;
     padding-left: 10px;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -970,11 +1012,11 @@ button.accordion-button{
     background:linear-gradient(
         135deg,
         rgba(198, 201, 159, 0.96),
-        rgba(206, 207, 202, 0.96)
+        rgba(231, 183, 183, 0.96)
       );
     font-size: small;  
         font-weight: bold;
-        color: rgb(2, 2, 2);
+        color: rgb(0, 0, 0);
         height: 47px;       
            
     }
@@ -1289,13 +1331,18 @@ select {
 }
 @media screen and (min-width: 991px) {
     .navigation-small{
-        display: none;
+        display: none !important;
         position: absolute;
         width: 200px;
         height: 100%;
-        background-color: red;
+        background-color: rgb(250, 246, 246);
         z-index: 1000000;
+        padding-left: 20px;
+
     }
+    
+  
+    
 
 .second-naira-cart-box{
     display: none;
@@ -1312,6 +1359,14 @@ select {
 @media screen and (max-width: 380px) {
     .break{
         display: none;
+    }
+     
+}
+@media screen and (max-width: 500px) {
+    
+    .jet-logo-footer{
+        width: 70px;
+        
     }
      
 }
@@ -1468,7 +1523,7 @@ z-index: 1;
     text-align: center;
     }
 .experienced{
-    border-left:4px solid #4046FF;
+    border-left:4px solid #a9a9ab;
     padding-left: 10px;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -1510,6 +1565,16 @@ z-index: 1;
 }
 
 @media screen and (max-width: 991px) {
+    .navigation-small{
+        display: none;
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        background-color: rgb(250, 246, 246);
+        z-index: 1000000;
+        padding-left: 20px;
+
+    }
     #home-btn,#store-btn,#about-btn,#contact-btn{
         /* color: rgb(255, 255, 255);
         font-weight:500;
@@ -1696,7 +1761,7 @@ z-index: 1;
         margin-left: 9vw;
    }
    .experienced{
-    border-left:4px solid #4046FF;
+    border-left:4px solid #a9a9ab;
     padding-left: 10px;
     border-radius: 5px;
     margin-bottom: 30px;

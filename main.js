@@ -5,9 +5,16 @@ const cancelBtn = document.querySelector('.cancel-btn')
 
 toggleBtn.addEventListener("click",function (params) {
     document.querySelector('.navigation-small').style.display = "block"
-console.log('clicked');    
+    console.log('clicked');    
 })
 cancelBtn.addEventListener("click",function (params) {
-    document.querySelector('.navigation-small').style.display = "none"
-console.log('clicked');    
+    document.querySelector('.overlay-small-screen').style.display = "none"
+    console.log('clicked');    
 })
+
+// if (window.innerWidth > 991) {
+//     document.querySelector('.navigation-small').style.display = "none"
+
+//     // overlayOpen();
+    
+//   }
