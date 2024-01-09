@@ -978,31 +978,8 @@ a.in-touch{
 }
 
 
-.meeting{
-    
-    border-radius: 10px;
-        
-        border-radius: 10px;      
-    }
-.meeting2{
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
-    
-    
-}
-.meeting04{
-   max-height: 539.8365478515625px;
-   max-width: 320px;
 
 
-}
-.meeting3{
-    max-width: 100%;
-    max-height: 280px;
-
-    border-radius: 10px;
-}
 section.E{
     margin-top: 0px;
 }
@@ -1159,9 +1136,7 @@ footer2{
 .copyright{
     border-top: 1px solid rgb(177, 175, 175);
 }
-.meeting05{
-    display: none;
-}
+
 .navbar-nav a.ser-vice {
     color: blue;
     font-weight:500;
@@ -1316,12 +1291,7 @@ select {
  
 
 @media screen and (max-width: 981px) {
-    .meeting04{
-        min-height: 339.8365478515625px;
-        min-width: 220px;
-     
-     
-     }
+   
     
 
 }
@@ -1374,29 +1344,11 @@ select {
      
 }
 @media screen and (max-width: 981px) {
-    .meeting04{
-        min-height: 339.8365478515625px;
-        min-width: 220px;
-     
-     
-     }
+   
     
 
 }
-/* @media screen and (max-width: 460px) {
 
-    .back-img{
-        position: absolute;
-        height: 300px;
-        width: 100%;
-    }
-    section.BG{
-        position: relative;
-        width: 100%;
-        height: 300px ;
-        background-color: red;
-    z-index: 1;
-    }} */
 @media screen and (max-width: 700px) {
     h3.gap{
         margin-bottom: 20px;
@@ -1473,19 +1425,7 @@ z-index: 1;
         
         
         }
-    .meeting05{
-       max-width: 320px;
-       max-height: 339px;
-        display: block;  
-        margin-left: auto;
-        margin-right: auto;
-     }
-     .meeting04{
-        display: none;
-     }
-     img.meeting3{
-        /* display: none; */
-     }
+   
      .sevice-btn{
         display: block;
     }
@@ -1755,11 +1695,7 @@ z-index: 1;
         margin-left:25vw ;
         margin-right:25vw;
     } */
-    .meeting2{
-        max-width: 60%;
-        max-height: 80%;
-        
-    }
+    
     .loww{
         margin-left: 9vw;
    }
@@ -1775,26 +1711,5 @@ z-index: 1;
 }
 
 }
-@media screen and (max-width: 1200px) {
-  
-}
-@media screen and (min-width: 2000px) {
-    
-    .calm{
-        margin-right: 19vw;
-    }
 
-}
 
-    
-    .meeting2{
-        max-width: 80%;
-        max-height: 80%;
-        display: none;
-    }
-    /* .meeting3{
-        max-width: 100%;
-        max-height: 100%;
-        /* display: block; 
-        
-    } */
