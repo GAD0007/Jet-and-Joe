@@ -8,7 +8,7 @@ toggleBtn.addEventListener("click",function (params) {
     console.log('clicked');    
 })
 cancelBtn.addEventListener("click",function (params) {
-    document.querySelector('.overlay-small-screen').style.display = "none"
+    document.querySelector('.navigation-small').style.display = "none"
     console.log('clicked');    
 })
 
