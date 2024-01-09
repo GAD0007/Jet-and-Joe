@@ -1,10 +1,13 @@
 body{
     position: relative;
-    max-width: 100%;
+    max-width: 1800px;
     height: auto;
     overflow-x: hidden;
     background-color: rgb(255, 255, 255);
     margin-top: 0px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* justify-content: center; */
 }
 header{
     /* margin-bottom: 20px; */
@@ -1748,10 +1751,10 @@ z-index: 1;
         margin-left:5vw ;
         margin-right:5vw;
     }
-    section.E{
+    /* section.E{
         margin-left:25vw ;
         margin-right:25vw;
-    }
+    } */
     .meeting2{
         max-width: 60%;
         max-height: 80%;
