@@ -11,7 +11,7 @@ body{
 }
 header{
     /* margin-bottom: 20px; */
-    z-index: 1000;
+    /* z-index: 1000; */
     
 }
 .logo-jet-nav{
@@ -1303,7 +1303,10 @@ select {
 
 }
 @media screen and (min-width: 991px) {
-    .navigation-small{
+    .overlay-small-screen{
+    display: none !important;}
+  
+    /* .navigation-small{
         display: none !important;
         position: absolute;
         width: 200px;
@@ -1312,7 +1315,7 @@ select {
         z-index: 1000000;
         padding-left: 20px;
 
-    }
+    } */
     
   
     
@@ -1590,7 +1593,7 @@ z-index: 1;
     }
     header{
         /* margin-bottom: 30px; */
-        z-index: 1000;   
+        /* z-index: 1000;    */
     } 
     header.two{
         margin-bottom: 0px;
