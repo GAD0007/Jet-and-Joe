@@ -189,26 +189,26 @@ minusBtn[i].addEventListener('click',function name(params) {
     
 })
 
-for (let i = 0; i < toCartBtn.length; i++) 
+// for (let i = 0; i < toCartBtn.length; i++) 
 
-toCartBtn[i].addEventListener("click",function name(params) {
-    console.log(arrayCounter);
-    const buttonCartValue = toCartBtn[i].value;
-    if (buttonCartValue == 1) {
-        console.log('first');  
-    }else if (buttonCartValue == 2) {
-        console.log('second');
-    }
-    else if (buttonCartValue == 3) {
-        console.log('third');
-    }
+// toCartBtn[i].addEventListener("click",function name(params) {
+//     console.log(arrayCounter);
+//     const buttonCartValue = toCartBtn[i].value;
+//     if (buttonCartValue == 1) {
+//         console.log('first');  
+//     }else if (buttonCartValue == 2) {
+//         console.log('second');
+//     }
+//     else if (buttonCartValue == 3) {
+//         console.log('third');
+//     }
 
 
     // let price = 10000
     // totalCartPrice.textContent= price * arrayCounter[0][0] + arrayCounter[1][0] + arrayCounter[2][0] 
 // console.log(arrayCounter[0][0] + arrayCounter[1][0] + arrayCounter[2][0] );
     
-})
+// })
 // console.log(arrayCounter);
 // console.log(arrayCounter[0][0] + arrayCounter[1][0] + arrayCounter[2][0] );
 
