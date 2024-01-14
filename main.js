@@ -14,30 +14,41 @@ const itemPrices = {
 
 }
 
+
 // the function that adds the counter to the small counter on cart
 
-const counterNav = function () {
-    document.querySelector(`.item-count${buttonValue}`).textContent = `${counter[buttonValue]}`
+// const counterNav = function () {
 
     
-}
+// }
 
 // 
-document.querySelector('.item-cost1').textContent = `$${itemPrices.item1}`
+// document.querySelector('.item-cost1').textContent = `$${itemPrices.item1}`
 // console.log(itemPrices.item1);
-document.querySelector('.item-cost2').textContent = `$${itemPrices.item2}`
-document.querySelector('.item-cost3').textContent = `$${itemPrices.item3}`
+// document.querySelector('.item-cost2').textContent = `$${itemPrices.item2}`
+// document.querySelector('.item-cost3').textContent = `$${itemPrices.item3}`
 
 
 const homeBtn = document.getElementById("home-btn")
 homeBtn.style.borderBottom = '2px solid white';
-const toggleBtn = document.querySelector('.navbar-toggler-icon-box')
+const toggleBtn = document.querySelector('.nav-collapse')
 const cancelBtn = document.querySelector('.cancel-btn')
 const navigationSmall = document.querySelector('.navigation-small')
 const PlusBtn = document.querySelectorAll('.plusbtnall')
 const minusBtn = document.querySelectorAll('.prevbtnall')
 const toCartBtn = document.querySelectorAll('.add-to-cart')
 const totalCartPrice = document.querySelector('.cost-total')
+const cartItem1 = document.querySelector('.item-1')
+const cartItem2 = document.querySelector('.item-2')
+const cartItem3 = document.querySelector('.item-3')
+// cartItem1.style.display = "none"
+// cartItem2.style.display = "none"
+// cartItem3.style.display = "none"
+
+
+
+
+
 
 
 // const counterValue = 
@@ -72,7 +83,10 @@ PlusBtn[i].addEventListener('click',function name(params) {
         arrayCounter[0].push(Number(counterArrival1.textContent));
         console.log(arrayCounter);
         console.log(arrayCounter[0][0]);
-        counterNav ()
+        // counterNav ()
+    document.querySelector(`.item-count${buttonValue}`).textContent = counter1
+
+
         
     } else if( buttonValue == 2 ) {
         console.log('002');
@@ -88,6 +102,8 @@ PlusBtn[i].addEventListener('click',function name(params) {
         arrayCounter[1].push(Number(counterArrival2.textContent));
         console.log(arrayCounter);
         console.log(arrayCounter[1][0]);;
+    document.querySelector(`.item-count${buttonValue}`).textContent = counter2
+
     }
     else if( buttonValue == 3 ) {
         console.log('003');
@@ -103,6 +119,8 @@ PlusBtn[i].addEventListener('click',function name(params) {
         arrayCounter[2].push(Number(counterArrival3.textContent));
         console.log(arrayCounter);
         console.log(arrayCounter[2][0]);
+    document.querySelector(`.item-count${buttonValue}`).textContent = counter3
+
 
     }
     
@@ -176,10 +194,7 @@ toCartBtn[i].addEventListener("click",function name(params) {
     console.log(arrayCounter);
     const buttonCartValue = toCartBtn[i].value;
     if (buttonCartValue == 1) {
-        console.log('first');
-       
-
-        
+        console.log('first');  
     }else if (buttonCartValue == 2) {
         console.log('second');
     }

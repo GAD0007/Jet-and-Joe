@@ -14,77 +14,18 @@
     />
   </head>
   <body class="mx-auto">
-    <div class="cart-background hidden-cart">
-    
-      <div class="cart-text">Cart <span class="empty-cart-button button"><img src="images/icon-delete.svg" alt=""> </span></div>
-      <div class="cart-line"></div>
-      <div class="empty-cart empty-cart-hidden"><span class = "empty-text-add">Your cart is empty</span></div>
-      <div class="cart-image-text hidden-cart-selection item-1">
-        
-        <div class="inner1">
-          <img
-          src="images/image-product-1-thumbnail.jpg"
-          class="thumbnail-image"
-          alt="shoe"
-          />
-        </div>
-        <div class="inner2">Fall limited Edition Sneakers  <div class="inner3">
-          <span class="item-cost1">$</span><span class="x">x</span
-            ><span class="item-count1">0</span
-              ><span class="total-price1">$0</span>
-            </div></div>
-            
-      </div>
-      <div class="cart-image-text hidden-cart-selection item-2">
-        
-        <div class="inner1">
-          <img
-          src="images/image-product-1-thumbnail.jpg"
-          class="thumbnail-image"
-          alt="shoe"
-          />
-        </div>
-        <div class="inner2">Fall limited Edition Sneakers  <div class="inner3">
-          <span class="item-cost2">$</span><span class="x">x</span
-            ><span class="item-count2">0</span
-              ><span class="total-price2">$0</span>
-            </div></div>
-            
-      </div>
-      <div class="cart-image-text-women hidden-cart-selection-women item-3">
-       
-        <div class="inner1">
-          <img
-            src="images/allstars-product-1-thumbnail.png"
-            class="thumbnail-image"
-            alt="shoe"
-          />
-        </div>
-        <div class="inner2">All Stars X Sneakers  <div class="inner3">
-          <span class="item-cost3">$</span><span class="x">x</span
-          ><span class="item-count3">0</span
-            ><span class="total-price3">$0</span>
-          </div></div>
-          
-          
-        </div>
-        <div class="inner44">
-           <button class="checkout" id="checkout-btn">Checkout</button>
-         </div>
-    
-      </div> 
-    </div>
+   
     
     <div class="navigation-small overlay-small-screen">
       <div class="sticky-bar">
       <div class=""><button class="cancel-btn"><img src="images/icon-close.svg" class="cancel-icon"></button></div>
 
-        <div><a class="button" id="home-btn" href="#"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
+        <div><a class="button" id="home-btn" href="index.html"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
         </div>
       <div>                   <a
         class="button"
         id="store-btn"
-        href=""
+        href="women.html"
         ><span class="small-icons"><img src="images/fashion.png" alt=""></span> Store</a
       >   </div>
       <div>                   <a
@@ -114,90 +55,60 @@
     </div>
     <!--Navbar-->
     <section class="A">
-      <header>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+      <nav>
+        <div class="nav-container">
+          <div class="nav-box">
+            <div class="nav-logo">
+              <img src="images/logo-jet-nav.png" alt="logo-brand" class="logo-jet-nav">
+            </div>
+            <div class="nav-collapse">
+              <img src="images/menu-button-of-three-horizontal-lines (1).png" alt="logo-brand" class=" button nav-collapse" />
+            </div>
+            <div class="navigations">
+              <!-- <div class="nav-item1">Collections</div> -->
+              <div class="nav-item2">
+                <a class="men-button no-style-btn">Home</a>
+              </div>
+              <div class="nav-item3">
+                <a class="women-button no-style-btn" href="women.html">Store</a>
+              </div>
+              <div class="nav-item4">
+                <button class="about-button no-style-btn">About</button>
+              </div>
+              <div class="nav-item5">
+                <button class="contact-button no-style-btn">Contact</button>
+              </div>
+            </div>
+            <div class="nav-item6">
               <img
-                src="images/logo-jet-nav.png"
-                alt="companylogo"
-                class="logo-jet-nav"
+                src="images/naira.png"
+                alt="avatar"
+                class="naira-image" width="22px"
               />
-            </a>
-            <button 
-             
-             class="navbar-toggler-icon-box second-naira-cart-box">
-              <span><img src="images/menu-button-of-three-horizontal-lines (1).png" alt=""></span>
-            </button>
-            <div class="cart-naira-box second-naira-cart-box">
-              <div class="naira-box" id="cost-total-box">
-                <img src="images/naira.png" alt="naira" class="naira-image" width="22px"/>
-               
-                <span class= "cost-total"></span>
-              </div>
+            </div>
+            <div class="nav-item7">
               <button class="cart-show-hide" id="cart-btn">
-                <!-- <img src="images/icon-cart.svg" alt="cart" class="cart-image" /> -->
-                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
-                    fill="#ffffff"
-                    fill-rule="nonzero"
-                    
-                  />
-                </svg>
+                <img src="images/icon-cart.svg" alt="cart" class="cart-image" />
               </button>
-              
             </div>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mb-lg-0 mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" id="home-btn" href="#">Home</a>
-                </li>
-                <li class ="nav-item">
-                  <a
-                    class="nav-link"
-                    id="store-btn"
-                    href=""
-                    >Store</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="about-btn"
-                    href=""
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="contact-btn" href=""
-                    >Contact</a
-                  >
-                </li>
-            
-              </ul>
-              <div class="cart-naira-box ">
-                <div class="naira-box" id="cost-total-box">
-                  <img src="images/naira.png" alt="naira" class="naira-image" width="22px"/>
-                 
-                  <span class= "cost-total"></span>
-                </div>
-                <button class="cart-show-hide" id="cart-btn">
-                  <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
-                      fill="#ffffff"
-                      fill-rule="nonzero"
-                      
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
+           
+            <!-- <div class="small-counter hidden-small-counter"></div>
+             <div class="cart-background hidden-cart">
+    
+      <div class="cart-text">Cart <span class="empty-cart-button button"><img src="images/icon-delete.svg" alt=""> </span></div>
+      <div class="cart-line"></div>
+      <div class="empty-cart empty-cart-hidden"><span class = "empty-text-add">Your cart is empty</span></div>
+      <div class="cart-image-text hidden-cart-selection item-1">
+        
+       
+     
+
+    </div> -->
+           
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+     
       <!-- main content in first section-->
     </section>
     <section class="BG">
