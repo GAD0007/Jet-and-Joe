@@ -1,4 +1,19 @@
 'use strict'
+const toggleBtn = document.querySelector('.nav-collapse')
+const cancelBtn = document.querySelector('.cancel-btn')
+// toggle btn
+toggleBtn.addEventListener("click",function (params) {
+    document.querySelector('.navigation-small').style.display = "block"
+    // navigationSmall.classList.toggle('show');
+    console.log('clicked');    
+})
+
+// cancel btn
+cancelBtn.addEventListener("click",function (params) {
+    document.querySelector('.navigation-small').style.display = "none"
+    console.log('clicked');    
+})
+
 let counter1 = 0
 let counter2 = 0
 let counter3 = 0
@@ -31,8 +46,6 @@ const itemPrices = {
 
 const homeBtn = document.getElementById("home-btn")
 homeBtn.style.borderBottom = '2px solid white';
-const toggleBtn = document.querySelector('.nav-collapse')
-const cancelBtn = document.querySelector('.cancel-btn')
 // const navigationSmall = document.querySelector('.navigation-small')
 const PlusBtn = document.querySelectorAll('.plusbtnall')
 const minusBtn = document.querySelectorAll('.prevbtnall')
@@ -52,18 +65,6 @@ const cartItem3 = document.querySelector('.item-3')
 
 
 // const counterValue = 
-// toggle btn
-toggleBtn.addEventListener("click",function (params) {
-    document.querySelector('.navigation-small').style.display = "block"
-    // navigationSmall.classList.toggle('show');
-    console.log('clicked');    
-})
-
-// cancel btn
-cancelBtn.addEventListener("click",function (params) {
-    document.querySelector('.navigation-small').style.display = "none"
-    console.log('clicked');    
-})
 
 // plus btn
 for (let i = 0; i < PlusBtn.length; i++) 
