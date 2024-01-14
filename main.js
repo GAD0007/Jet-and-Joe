@@ -33,7 +33,7 @@ const homeBtn = document.getElementById("home-btn")
 homeBtn.style.borderBottom = '2px solid white';
 const toggleBtn = document.querySelector('.nav-collapse')
 const cancelBtn = document.querySelector('.cancel-btn')
-const navigationSmall = document.querySelector('.navigation-small')
+// const navigationSmall = document.querySelector('.navigation-small')
 const PlusBtn = document.querySelectorAll('.plusbtnall')
 const minusBtn = document.querySelectorAll('.prevbtnall')
 const toCartBtn = document.querySelectorAll('.add-to-cart')
@@ -55,7 +55,7 @@ const cartItem3 = document.querySelector('.item-3')
 // toggle btn
 toggleBtn.addEventListener("click",function (params) {
     document.querySelector('.navigation-small').style.display = "block"
-    navigationSmall.classList.toggle('show');
+    // navigationSmall.classList.toggle('show');
     console.log('clicked');    
 })
 
