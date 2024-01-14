@@ -1636,11 +1636,11 @@ main .model {
   padding: 10px 0;
 }
 /* cart items */
-/* .cart-items {
-  max-height: calc(100vh - 247px);
+.cart-items {
+  max-height: calc(70vh - 247px);
   overflow-y: auto;
   overflow-x: hidden;
-} */
+}
 /* cart item */
 .cart-item {
   display: flex;
