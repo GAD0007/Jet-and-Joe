@@ -35,9 +35,11 @@
         ><span class="small-icons"><img src="images/contact-us.png" alt=""></span> Contact</a
       ></div>
       <div>                  <a
+        href="#offcanvasExample" 
+                  aria-controls="offcanvasExample"  data-bs-toggle="offcanvas"
         class="button"
         id="about-btn"
-        href=""
+        
         ><span class="small-icons"><img src="images/information.png" alt=""></span> About</a
       ></div>
       <div class="">
@@ -67,28 +69,28 @@
             <div class="navigations">
               <!-- <div class="nav-item1">Collections</div> -->
               <div class="nav-item2">
-                <a class="men-button no-style-btn">Home</a>
+                <a class="link-nav  men-button no-style-btn">Home</a>
               </div>
               <div class="nav-item3">
-                <a class="women-button no-style-btn" href="women.html">Store</a>
+                <a class="link-nav women-button no-style-btn" href="women.html">Store</a>
               </div>
               <div class="nav-item4">
-                <button class="about-button no-style-btn">About</button>
+                <a class="link-nav"  href="#offcanvasExample" 
+                  aria-controls="offcanvasExample"  data-bs-toggle="offcanvas">About</a>
+                <!-- <button class="about-button no-style-btn">About</button> -->
               </div>
               <div class="nav-item5">
-                <button class="contact-button no-style-btn">Contact</button>
+               <a  class="link-nav"
+               data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+               aria-controls="offcanvasWithBothOptions">Contact</a>
+
+                <!-- <button class="contact-button no-style-btn">Contact</button> -->
               </div>
             </div>
+           
             <div class="nav-item6">
-              <img
-                src="images/naira.png"
-                alt="avatar"
-                class="naira-image" width="22px"
-              />
-            </div>
-            <div class="nav-item7">
               <button class="cart-show-hide" id="cart-btn">
-                <img src="images/icon-cart.svg" alt="cart" class="cart-image" />
+               VISIT STORE <img src="images/fashion.png" alt="" class="cart-image" />
               </button>
             </div>
            
@@ -126,6 +128,128 @@
         </div>
       </section>
     </section>
+    <section class="absolute-canvas">
+     
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+       <div class="canva-body">
+        <div class="offcanvas-header">
+          <div class="offcanvas-title" id="offcanvasExampleLabel"> <span class="about-about">About</span> <br> <span class="j-j-bold">Jet & Joe</span></div>
+          <div       
+            class="button-close-about"     
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ><img  src="images/close.png" alt=""></div>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <p>
+              Jet & Joe, a fashion powerhouse, embodies a 
+              blend of sophistication and uniqueness. 
+              Our brand, a hub for style enthusiasts, 
+              
+              curates clothing that transcends trends, 
+              
+              making a bold statement about individual identity. Inspired by modern 
+              aesthetics, Jet & Joe delivers top-notch, high-quality products that redefine contemporary fashion. From exclusive designs to unmatched craftsmanship, each piece reflects our commitment to elevating your wardrobe. Redefine your fashion journey with Jet & Joe.</p>
+              <div class="social-logo mb-3">
+                <a href="#" class="button">
+                  <img
+                    src="images/Instagram.png"
+                    class="social-logo1"
+                    alt="Instagram-Logo"
+                  />
+                </a>
+                <a href="#" class="button">
+                  <img
+                    src="images/whatsapp.png"
+                    width="24px"
+                    alt="whatsapp-icon"
+                  />
+                </a>
+              </div>
+              <div class="mb-5">
+                <button class="shop-btn-small-offcanva">Shop now</button>
+              </div>
+              <div class="logo-jet-box">
+                <img src="images/logo-jet.png" width="150px">
+          
+                
+               </div>
+            <div>
+         
+              
+             </div>
+          
+        </div>
+       </div>
+      </div>
+    </section>
+    <section class="second-canva">
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="canva-body2">
+          <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasExampleLabel"> <span class="about-about">Contact</span> <br> <span class="j-j-bold">Jet & Joe</span></div>
+
+            <div class="button-close-about" data-bs-dismiss="offcanvas" aria-label="Close"><img  src="images/close.png" alt=""></div>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <div>
+         
+                <p><span class="green-icon"><img src="images/phone-call.png
+                 " width="20px" height="18px" alt="green-icon" class=""></span>Prof. Dr. N.A. Oladoja  LOC Chairman +2348055438642</p>
+                 <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>nurudeen.oladoja@aaua.edu.ng</p>
+               </div>
+               <div>
+            
+                 <p><span class="green-icon"><img src="images/phone-call.png
+                  " width="20px" height="18px" alt="green-icon" class=""></span>Prof. Dr. T.O. Adejumo (Convener) +2348036296127, 08053546526</p>
+                  <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>timothy.adejumo@aaua.edu.ng, tadejum@gwdg.de</p>
+                </div>
+             
+           </div>
+                <div class="social-logo mb-3">
+                  <a href="#" class="button">
+                    <img
+                      src="images/Instagram.png"
+                      class="social-logo1"
+                      alt="Instagram-Logo"
+                    />
+                  </a>
+                  <a href="#" class="button">
+                    <img
+                      src="images/whatsapp.png"
+                      width="24px"
+                      alt="whatsapp-icon"
+                    />
+                  </a>
+                </div>
+                <div class="mb-5">
+                  <button class="shop-btn-small-offcanva">Shop now</button>
+                </div>
+                <div class="logo-jet-box">
+                  <img src="images/logo-jet.png" width="150px">
+            
+                  
+                 </div>
+              <div>
+           
+                
+               </div>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
     <!-- content on the services of the brand-->
     <section class="C">
       <div class="container-fluid">

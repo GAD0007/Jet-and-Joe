@@ -120,6 +120,28 @@ position: absolute;
 
 
 }
+.shop-btn-small-offcanva{
+    padding: 9px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 253, 253);
+    color: rgb(255, 254, 254);
+    background-color: transparent ;
+    transition: 0.5s ease-in-out;
+
+
+}
+:hover.shop-btn-small-offcanva{
+    padding: 9px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 253, 253);
+    color: rgb(15, 15, 15);
+    background-color: white ;
+    transition: 0.5s ease-in-out;
+
+
+}
 .shop-btn{
     padding: 9px 14px;
     font-size: 15px;
@@ -669,21 +691,32 @@ section.F{
 .nav-item6{
     position: absolute;
     left: 86%;
-    top: 10%;
+    top: 20%;
 
 }
 .nav-item7{
     position: absolute;
+    left: 91%;
+    top: 18%;
+
+
+}
+.nav-item77{
+    position: absolute;
     left: 92%;
-    top: 5%;
+    top: 15%;
 
 
+}
+.price-total-show{
+    position: relative;
+    top: 3px;
 }
 .navigations{
     position: absolute;
     display: flex;
-    left: 20%;
-    bottom: 5%;
+    left: 18%;
+    bottom: -6%;
     margin-left: 20%;
     /* padding-bottom: 10px; */
 }
@@ -691,6 +724,7 @@ section.F{
     color: rgb(53, 52, 51);
     margin-right: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 .nav-logo{
     position: absolute;
@@ -724,6 +758,11 @@ section.F{
 .cart-show-hide{
     background: transparent;
     border: none;
+    color: rgb(240, 233, 233);
+    font-weight: 900;
+}
+:hover.cart-show-hide{
+    color: green;
 }
 
 
@@ -1507,7 +1546,7 @@ main .model {
 /* products list */
 .products-list {
     justify-content: center;
-  width: 100vw;
+  /* width: 100vw; */
   /* height: 100vh; */
 
   /* padding-top: 100px; */
@@ -1527,7 +1566,7 @@ main .model {
   grid-gap: 40px;
 }
 .products img {
-    position: absolute;
+    position: relative;
   width: 100%;
   height: 230px;
   border-radius: 25px 25px 0 0;
@@ -1575,21 +1614,91 @@ main .model {
 
   padding: 10px;
 }
+.modal-backdrop {
+    /* display: none !important; */
+}
+.about-about{
+    font-weight: bold;
+}
+.j-j-bold{
+    font-size: 40px;
+    font-weight: bold;
+}
+.link-nav {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #fbfdff;
+        text-decoration: none;
+        font-size: large;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+   :hover.link-nav {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #fefeff;
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+
+.canva-body{
+    background-color: red;
+    /* background-image: ; */
+    background: rgba(73, 72, 72, 0.7) url('images/IMG_0206.JPG'); /* Replace with the path to your image */
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    font-weight: 100;
+
+    /* opacity: 0.2; */
+
+}
+.canva-body2{
+    background-color: red;
+    /* background-image: ; */
+    background: rgba(73, 72, 72, 0.7) url('images/IMG_0208.JPG'); /* Replace with the path to your image */
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    font-weight: 100;
+
+    /* opacity: 0.2; */
+
+}
+.button-close-about{
+    cursor: pointer;
+}
+
+.absolute-canvas{
+    background-color: #000120;
+}
+.offcanvas{
+    background-color: red;
+}
 .products .item .item-container .add-to-cart {
-  background-color: rgba(var(--right-side-bg-color), 0.7);
+  /* background-color: rgba(var(--right-side-bg-color), 0.7); */
   /* background-color: rgb(242, 255, 58); */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-radius: 10px;
+  border: none;
+
+  font-size: 12px;
 
   position: absolute;
-  top: 90%;
-  right: 50px;
+  top: 95%;
+  right: 10px;
+  /* border: 1px solid black; */
+  background-color: hsl(26, 100%, 55%) ;
 
-  padding: 5px;
+  color: white;
 
-  border-radius: 50%;
+  padding: 5px 12px;
+  font-weight: 50;
+
+  /* border-radius: 50%; */
+  
 
   cursor: pointer;
 }
@@ -1603,7 +1712,7 @@ main .model {
 
   position: absolute;
   top: 10px;
-  right: 60px;
+  right: 10px;
 
   padding: 5px;
 
@@ -1612,8 +1721,10 @@ main .model {
   cursor: pointer;
 }
 .products .item .item-container .add-to-cart img {
-  width: 32px;
-  height: 32px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  bottom: 2px;
 }
 .products .item .item-container .add-to-wishlist img {
   width: 32px;
@@ -1821,14 +1932,14 @@ main .model {
     } */
     .nav-item6{
         position: absolute;
-        left: 70%;
-        top: 10%;
+        left: 71%;
+        top: 26%;
     
     }
     .nav-item7{
         position: absolute;
-        left: 80%;
-        top: 5%;
+        left: 87%;
+        top: 26%;
     
     }
     
@@ -1849,20 +1960,20 @@ main .model {
     position: absolute;
     display: flex;
     left: 20%;
-    bottom: 5%;
-    margin-left: 15%;
+    bottom: -6%;
+    margin-left: 10%;
     /* padding-bottom: 10px; */
 }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 840px) {
 
     .navigations{
         position: absolute;
         display: flex;
         left: 20%;
-        bottom: 5%;
-        margin-left: 10%;
+        bottom: -6%;
+        margin-left: 5%;
         /* padding-bottom: 10px; */
     }
     }
