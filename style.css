@@ -120,6 +120,17 @@ position: absolute;
 
 
 }
+:hover.shop-btn-small{
+    padding: 9px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(43, 42, 42);
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 22, 22) ;
+    transition: 0.5s ease-in-out;
+
+
+}
 .shop-btn-small-offcanva{
     padding: 9px 14px;
     font-size: 15px;
@@ -615,6 +626,15 @@ section.team-members{
     border-radius: 10px;
     justify-content: center;
 
+}
+
+
+p.shirt-name{
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(24, 23, 23);
 }
 .minus-mark,.add-mark{
     width: 2rem;
@@ -1652,6 +1672,16 @@ main .model {
     /* opacity: 0.2; */
 
 }
+.new-arrivals{
+ width: 100%;
+ 
+}
+.new-box{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
 .canva-body2{
     background-color: red;
     /* background-image: ; */
@@ -1870,6 +1900,13 @@ main .model {
       }
     
 
+}
+@media screen and (max-width: 576px) {
+    .new-box{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 570px) {
     .visi1{
