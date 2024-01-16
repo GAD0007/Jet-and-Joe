@@ -268,6 +268,15 @@ z-index: -10;
 
     /* transition: 10s ease */
 }
+.contact-btn{
+    background-color: rgb(86, 209, 86);
+    padding: 5px 10px;
+    color: white;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
 .sticky-bar div{
     margin-top: 15px;
 
@@ -627,6 +636,17 @@ section.team-members{
     justify-content: center;
 
 }
+@keyframes blink {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+  }
+
+  .blinking-text {
+    animation: blink 2s infinite;
+  }
 
 
 p.shirt-name{
@@ -1168,7 +1188,7 @@ footer2{
 .email-for-deals{
     background-color: rgb(255, 255, 255);
     
-    border: 2px solid rgb(104, 104, 224);
+    border: 1px solid rgb(17, 17, 17);
    
     border-radius: 5px;
     height: 36px;
@@ -1179,12 +1199,14 @@ footer2{
     font-size: small;
 }
 .subscribe form{
+
+    
   
 }
 .subscription-button{
     color: white;
     width: 45%;
-    background-color:#4046FF;
+    background-color:#0f0f0f;
     border-radius: 5px;
     padding: 8px 24px 8px 20px;
     border: none;
@@ -1360,12 +1382,12 @@ select {
 }
 
 /* General CSS */
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Rubik;
-}
+} */
 
 /* html {
   font-size: 16px;
@@ -1634,9 +1656,7 @@ main .model {
 
   padding: 10px;
 }
-.modal-backdrop {
-    /* display: none !important; */
-}
+
 .about-about{
     font-weight: bold;
 }
@@ -1668,9 +1688,13 @@ main .model {
     background-blend-mode: darken;
     color: white;
     font-weight: 100;
+    height: 100%;
 
     /* opacity: 0.2; */
 
+}
+.offcanvas-start{
+    height: fit-content !important;
 }
 .new-arrivals{
  width: 100%;
