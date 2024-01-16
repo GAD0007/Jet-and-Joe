@@ -1683,7 +1683,7 @@ main .model {
 .canva-body{
     background-color: red;
     /* background-image: ; */
-    background: rgba(73, 72, 72, 0.7) url('images/IMG_0206.JPG'); /* Replace with the path to your image */
+    background: rgba(73, 72, 72, 0.7) url('images/IMG-0206.JPG'); /* Replace with the path to your image */
     background-size: cover;
     background-blend-mode: darken;
     color: white;
@@ -1709,7 +1709,7 @@ main .model {
 .canva-body2{
     background-color: red;
     /* background-image: ; */
-    background: rgba(73, 72, 72, 0.7) url('images/IMG_0208.JPG'); /* Replace with the path to your image */
+    background: rgba(73, 72, 72, 0.7) url('images/IMG-0208.JPG'); /* Replace with the path to your image */
     background-size: cover;
     background-blend-mode: darken;
     color: white;
