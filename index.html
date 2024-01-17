@@ -8,12 +8,20 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <!-- bootstrap file -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .home-nav{
+        border-bottom: 2px solid white;
+      }
+    </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
   </head>
+  
+  
   <body class="mx-auto">
+    <div class="button" id="scrollToTopBtn" onclick="scrollToTop()"><img src="images/top (1).png" alt=""></div>
    
 
     <div class="navigation-small overlay-small-screen">
@@ -49,9 +57,7 @@
         <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
       </div>
       <div class="logo-jet-box">
-       <img src="images/logo-jet.png" width="150px">
- 
-       
+       <img src="images/logo-jet.png" width="150px"> 
       </div>
      </div>
       
@@ -72,7 +78,7 @@
             <div class="navigations">
               <!-- <div class="nav-item1">Collections</div> -->
               <div class="nav-item2">
-                <a class="link-nav   ">Home</a>
+                <a class="link-nav home-nav" href="index.html">Home</a>
               </div>
               <div class="nav-item3">
                 <a class="link-nav  " href="store.html">Store</a>

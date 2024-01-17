@@ -1,6 +1,42 @@
 'use strict'
 const toggleBtn = document.querySelector('.nav-collapse')
 const cancelBtn = document.querySelector('.cancel-btn')
+const contactBtn= document.getElementById('contact-btn')
+const aboutBtn= document.getElementById('about-btn')
+
+window.onscroll = function() {
+    showScrollButton();
+  };
+
+  function showScrollButton() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
+
+  // Scroll to top when the button is clicked
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }
+
+
+// about btn
+aboutBtn.addEventListener("click",function name() {
+    console.log("omw")
+    document.querySelector('.navigation-small').style.display = "none"
+
+    
+})
+// contact btn
+contactBtn.addEventListener("click",function name() {
+    document.querySelector('.navigation-small').style.display = "none"
+    console.log("omw")
+    
+})
 // toggle btn
 toggleBtn.addEventListener("click",function (params) {
     document.querySelector('.navigation-small').style.display = "block"
@@ -10,8 +46,8 @@ toggleBtn.addEventListener("click",function (params) {
 
 // cancel btn
 cancelBtn.addEventListener("click",function (params) {
-    document.querySelector('.navigation-small').style.display = "none"
     console.log('clicked');    
+    document.querySelector('.navigation-small').style.display = "none"
 })
 
 let counter1 = 0
