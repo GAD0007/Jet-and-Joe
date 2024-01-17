@@ -1502,6 +1502,9 @@ a {
     background-color: rgb(199, 199, 196);
       background-image: url(images/IMG-0208.png);
       background-blend-mode: darken;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 .products .item {
   display: flex;
@@ -1919,6 +1922,14 @@ a {
     }
 }
 @media screen and (max-width: 570px) {
+    .section-store{
+        background-color: rgb(199, 199, 196);
+          background-image: url(images/IMG-0208.png);
+          background-blend-mode: darken;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+    }
     .visi1{
         display: none;
     }
