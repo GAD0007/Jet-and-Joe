@@ -1584,7 +1584,7 @@ a {
 .canva-body{
     background-color: red;
     /* background-image: ; */
-    background: rgba(73, 72, 72, 0.7) url('images/backdrop.JPG'); /* Replace with the path to your image */
+    background: rgba(73, 72, 72, 0.7); /* Replace with the path to your image */
     background-size: cover;
     background-blend-mode: darken;
     color: white;
@@ -1593,6 +1593,9 @@ a {
 
     /* opacity: 0.2; */
 
+}
+.offcanvas-header{
+    margin-top: 30px;
 }
 .canva-body2{
     background-color: red;
