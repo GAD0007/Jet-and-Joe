@@ -92,41 +92,12 @@ renderProdcuts();
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
 updateCart();
 
-// // ADD TO CART
-// function addToCart(id) {
-//   // check if prodcut already exist in cart
-//   if (cart.some((item) => item.id === id)) {
-//     changeNumberOfUnits("plus", id);
-//   } else {
-//     const item = products.find((product) => product.id === id);
-
-//     cart.push({
-//       ...item,
-//       numberOfUnits: 1,
-//     });
-//   }
-
-//   updateCart();
-// }
-
-
+// ADD TO CART
 function addToCart(id) {
-  cartIndex ++
+  // check if prodcut already exist in cart
   document.querySelector('.cart-background').style.display = "block"
 
-  const sizeSelect = document.getElementById("size");
-  const colorSelect = document.getElementById("color");
-
-  const selectedSize = sizeSelect.value;
-  const selectedColor = colorSelect.value;
-
-  if (!selectedSize || !selectedColor) {
-    alert("Please select size and color before adding to cart.");
-    return;
-  }
-
-  // check if product already exists in cart
-  if (cart.some((item) => item.id === id && item.size === selectedSize && item.color === selectedColor)) {
+  if (cart.some((item) => item.id === id)) {
     changeNumberOfUnits("plus", id);
   } else {
     const item = products.find((product) => product.id === id);
@@ -134,19 +105,14 @@ function addToCart(id) {
     cart.push({
       ...item,
       numberOfUnits: 1,
-      size: selectedSize,
-      color: selectedColor,
-
-      
     });
-
-
-    // Save cart to local storage
-    localStorage.setItem("CART", JSON.stringify(cart));
   }
 
   updateCart();
 }
+
+
+
 
 // update cart
 function updateCart() {

@@ -1594,9 +1594,7 @@ a {
     /* opacity: 0.2; */
 
 }
-.offcanvas-header{
-    margin-top: 30px;
-}
+
 .canva-body2{
     background-color: red;
     /* background-image: ; */
@@ -2106,6 +2104,9 @@ a {
     }
 
 @media screen and (max-width: 700px) {
+    .offcanvas-header{
+        margin-top: 30px;
+    }
     .nav-item6{
         position: absolute;
         left: 72%;
