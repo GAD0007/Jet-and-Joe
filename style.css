@@ -1584,12 +1584,24 @@ a {
 .canva-body{
     background-color: red;
     /* background-image: ; */
-    background: rgba(73, 72, 72, 0.7) url('images/IMG-0206.JPG'); /* Replace with the path to your image */
+    background: rgba(73, 72, 72, 0.7) url('images/backdrop.JPG'); /* Replace with the path to your image */
     background-size: cover;
     background-blend-mode: darken;
     color: white;
     font-weight: 100;
     height: 100%;
+
+    /* opacity: 0.2; */
+
+}
+.canva-body2{
+    background-color: red;
+    /* background-image: ; */
+    background: rgba(73, 72, 72, 0.7) url('images/IMG-0208.JPG'); /* Replace with the path to your image */
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    font-weight: 100;
 
     /* opacity: 0.2; */
 
@@ -1607,18 +1619,7 @@ a {
     justify-content: center;
 }
 
-.canva-body2{
-    background-color: red;
-    /* background-image: ; */
-    background: rgba(73, 72, 72, 0.7) url('images/IMG-0208.JPG'); /* Replace with the path to your image */
-    background-size: cover;
-    background-blend-mode: darken;
-    color: white;
-    font-weight: 100;
 
-    /* opacity: 0.2; */
-
-}
 .button-close-about{
     cursor: pointer;
 }
