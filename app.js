@@ -5,6 +5,11 @@ const cartItemsEl = document.querySelector(".cart-items");
 const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 const cartBtn = document.querySelector(".nav-item7");
+const payAmount = document.getElementById("amount")
+
+let priceArr = []
+
+
 
 document.querySelector('.cart-background').style.display = "none"
 
@@ -26,56 +31,43 @@ cartBtn.addEventListener("click",function name(params) {
 function renderProdcuts() {
   
   products.forEach((product) => {
+    const { sizes = ["medium", "small", "large", "extra-large"], colors = ["black", "red", "blue", "green"] } = product.options || {};
+
+    const sizeOptions = sizes.map((size) => `<option value="${size}">${size}</option>`).join('');
+    const colorOptions = colors.map((color) => `<option value="${color}">${color}</option>`).join('');
+
     productsEl.innerHTML += `
-    
-    <div class="item">
-    <div class="item-container">
-    <div class="item-img">
-    <img src="${product.imgSrc}" alt="${product.name}">
-    </div>
-    <div class="desc">
-    <div class="add-to-wishlist">
-        <img src="images/stars (2).png" alt="add to wish list">
-    </div>
-    <h5>${product.name}</h5>
-                        <h6 class="mb-3"><small>&#8358;</small>${product.price}</h6>
-                        
-                        <form action="/submit" method="post">
-                        <label for="size-${product.id}">size:</label>
-                        <select id="size-${product.id}" name="size">
-                          <option value="medium">M</option>
-                          <option value="small">S</option>
-                          <option value="large">L</option>
-                          <option value="extra-large">X-L</option>
-                        </select>
-                       
-                       <span class="left-margin"></span>
-                        
-                        <label for="color-${product.id}">color:</label>
-                        <select id="color-${product.id}" name="color">
-                        <option value="black">Black</option>
-                          <option value="red">Red</option>
-                          <option value="blue">Blue</option>
-                          <option value="green">Green</option>
-                        </select>
-            
-                        <br>
-                      </form>
-                      
-                        <div class="add-to-cart button" onclick="addToCart(${product.id})">
-                        <img
-                          src="images/icon-cart.svg"
-                          alt="cart img"
-                          class="cart-img"
-                        />
-                        add to cart
-                      </div>
-                       
-                    </div>
-                    
-                    </div>
-                    </div>
-                    `;
+      <div class="item">
+        <div class="item-container">
+          <div class="item-img">
+            <img src="${product.imgSrc}" alt="${product.name}">
+
+          </div>
+          <div class="desc">
+            <div class="add-to-wishlist">
+              <img src="images/stars (2).png" alt="add to wish list">
+            </div>
+            <h5>${product.name}</h5>
+            <h6 class="mb-3"><small>&#8358;</small>${product.price}</h6>
+            <form action="/submit" method="post">
+              <label for="size-${product.id}">size:</label>
+              <select id="size-${product.id}" name="size">
+                ${sizeOptions}
+              </select>
+              <span class="left-margin"></span>
+              <label for="color-${product.id}">color:</label>
+              <select id="color-${product.id}" name="color">
+                ${colorOptions}
+              </select>
+              <br>
+            </form>
+            <div class="add-to-cart button" onclick="addToCart(${product.id})">
+              <img src="images/icon-cart.svg" alt="cart img" class="cart-img"/>
+              add to cart
+            </div>
+          </div>
+        </div>
+      </div>`;
   });
 }
 renderProdcuts();
@@ -136,8 +128,11 @@ function renderSubtotal() {
   totalItemsInCartEl.innerHTML = totalItems;
 document.querySelector('.total-price-nav').textContent = totalPrice.toFixed(2)
 
-}
 
+
+
+
+}
 
 
 // render cart items
@@ -195,5 +190,52 @@ function changeNumberOfUnits(action, id) {
 
   updateCart();
 }
+const checkoutbtn = document.querySelector('.checkout')
+checkoutbtn.addEventListener("click",function (params) {
+  
+
+  
+  
+  
+})
+
+
+// const forewardBtn = document.querySelectorAll(".foreward1")
+// // for (let i = 0; i < forewardBtn.length; i++) 
+
+// forewardBtn[0].addEventListener("click",function (params) {
+//   // products.id.imgSrc[1]
+
+//     console.log("first");
+// })
+// forewardBtn[1].addEventListener("click",function (params) {
+
+//   console.log("second");
+// })
+// forewardBtn[2].addEventListener("click",function (params) {
+
+//   console.log("third");
+// })
+// forewardBtn[3].addEventListener("click",function (params) {
+
+// console.log("fourth");
+// })
+// forewardBtn[4].addEventListener("click",function (params) {
+
+//   console.log("fifth");
+// })
+// forewardBtn[5].addEventListener("click",function (params) {
+
+// console.log("sixth");
+// })
+  
+  
+{/* <button class="back-image backward1" id="backward"><img src="images/backward-arrow.png" class="imagePointer"></button>
+<button class="back-image foreward1" id="foreward"><img src="images/backward-arrow (1).png" class="imagePointer"></button> */}
+
+ 
+
+
+
 
 

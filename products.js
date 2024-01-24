@@ -5,6 +5,10 @@ const products = [
     price: 29.99,
     instock: 100,
     imgSrc: "images/jungle2.png",
+    options: {
+      sizes: ["medium"],
+      colors: ["blue", "green"],
+    },
   },
   {
     id: 1,

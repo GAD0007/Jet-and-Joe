@@ -920,6 +920,25 @@ span.line2{
     display: inline-block;
     margin-bottom: 0px;
 }
+.back-image{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 0px;
+}
+.imagePointer{
+   position: relative;
+   right: 10px;
+    width: 40px !important;
+    height: 30px !important;
+}
+#foreward{
+    right: 0px;
+}
+#backward{
+    left: 0px;
+}
 h5{
     display: inline;
     position: relative;

@@ -19,6 +19,39 @@
     />
   </head>
   <body class="mx-auto section-store">
+   <section class="payment-form">
+     <form id="paymentForm">
+      <div class="form-group">
+        <div>Your receipt will be sent to the email address provided</div>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email-address" required />
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="tel" id="amount" required />
+      </div>
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="firstName" required/>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="lastName" required />
+      </div>
+      <div class="form-group">
+        <label for="last-name">Phone Number</label>
+        <input type="tel" id="phoneNum" required />
+      </div>
+      <div class="form-group">
+        <label for="Delivery-address">Delivery address</label>
+        <input type="text" id="deliveryAddress" required/>
+      </div>
+      <div class="form-submit">
+        <button type="submit" onclick="payWithPaystack()"> Pay </button>
+      </div>
+    </form>
+   </section>
     <div class="button" id="scrollToTopBtn" onclick="scrollToTop()"><img src="images/top.png" alt=""></div>
 
     <div class="navigation-small overlay-small-screen">
@@ -372,7 +405,8 @@
         </div>
       </div>
     </footer>
-
+    <script src="payment.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
 
     <script>
       const porductsListEl = document.querySelector(".products-list");
