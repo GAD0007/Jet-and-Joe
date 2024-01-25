@@ -19,39 +19,7 @@
     />
   </head>
   <body class="mx-auto section-store">
-   <section class="payment-form">
-     <form id="paymentForm">
-      <div class="form-group">
-        <div>Your receipt will be sent to the email address provided</div>
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email-address" required />
-      </div>
-      <div class="form-group">
-        <label for="amount">Amount</label>
-        <input type="tel" id="amount" required />
-      </div>
-      <div class="form-group">
-        <label for="first-name">First Name</label>
-        <input type="text" id="firstName" required/>
-      </div>
-      <div class="form-group">
-        <label for="last-name">Last Name</label>
-        <input type="text" id="lastName" required />
-      </div>
-      <div class="form-group">
-        <label for="last-name">Phone Number</label>
-        <input type="tel" id="phoneNum" required />
-      </div>
-      <div class="form-group">
-        <label for="Delivery-address">Delivery address</label>
-        <input type="text" id="deliveryAddress" required/>
-      </div>
-      <div class="form-submit">
-        <button type="submit" onclick="payWithPaystack()"> Pay </button>
-      </div>
-    </form>
-   </section>
+   
     <div class="button" id="scrollToTopBtn" onclick="scrollToTop()"><img src="images/top.png" alt=""></div>
 
     <div class="navigation-small overlay-small-screen">
@@ -318,6 +286,73 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="third-canva">
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasPayment" role="button" aria-controls="offcanvasPayment">
+        Link with href
+      </a>
+   
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPayment" aria-labelledby="offcanvasPayment">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasPayment">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <section class="payment-form">
+            <form id="paymentForm">
+             <div class="form-group">
+               <div class="note"><div>Note:</div>
+               <div>1) Your order wont be processed if the amount paid doesnt match the total amount.</div>
+               <div>2)  Our representative will reach out once your order is made</div>
+               <div>3)  Shop and enjoy the unique style Jet & Joe has to offer😎👕 </div>
+               </div>
+               <label for="email">Email Address</label>
+               <br>
+               <input type="email" id="email-address" class="longer" placeholder="your receipt will be sent to the email provided" required />
+             </div>
+             <div class="form-group">
+               <label for="amount">Amount</label>
+               <br>
+               <span class="pricedetailpay1"></span><br>
+               <span class="pricedetailpay"></span>
+               <br>
+       
+               <input type="tel" id="amount" class="longer" required />
+             </div>
+             <div class="form-group">
+               <label for="first-name" >First Name</label>
+               <br>
+       
+               <input type="text" id="firstName" class="longer" required/>
+             </div>
+             <div class="form-group">
+               <label for="last-name">Last Name</label>
+               <br>
+       
+               <input type="text" id="lastName"  class="longer" required />
+             </div>
+             <div class="form-group">
+               <label for="last-name">Phone Number</label>
+               <br>
+       
+               <input type="tel" id="phoneNum" class="longer" required />
+             </div>
+             <div class="form-group">
+               <label for="Delivery-address">Delivery address</label>
+               <br>
+       
+               <input type="text" id="deliveryAddress" class="longer" required/>
+             </div>
+             <div class="form-submit">
+               <button type="submit" onclick="payWithPaystack()"> Pay </button>
+             </div>
+           </form>
+          </section>
+          
+        </div>
+      </div>
+      
     </section>
   
    <div class="products-list">

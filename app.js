@@ -6,8 +6,13 @@ const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 const cartBtn = document.querySelector(".nav-item7");
 const payAmount = document.getElementById("amount")
+const priceShow  = document.querySelector('.pricedetailpay')
+const priceShow1  = document.querySelector('.pricedetailpay1')
+
+
 
 let priceArr = []
+let priceARR = []
 
 
 
@@ -109,6 +114,7 @@ function addToCart(id) {
 function updateCart() {
   renderCartItems();
   renderSubtotal();
+  
 
   // save cart to local storage
   localStorage.setItem("CART", JSON.stringify(cart));
@@ -126,7 +132,15 @@ function renderSubtotal() {
   
   subtotalEl.innerHTML = `Subtotal (${totalItems} items): &#8358;${totalPrice.toFixed(2)}`;
   totalItemsInCartEl.innerHTML = totalItems;
+
 document.querySelector('.total-price-nav').textContent = totalPrice.toFixed(2)
+
+  priceShow.textContent = `Total Amount = ${Number(totalPrice.toFixed(2)) + 2500}`
+  priceShow1.textContent = `Selection ${Number(totalPrice.toFixed(2))} + Delivery ${2500}`
+
+  priceARR.push(totalPrice.toFixed(2))
+
+console.log(priceARR);
 
 
 
@@ -181,7 +195,7 @@ function changeNumberOfUnits(action, id) {
         numberOfUnits++;
       }
     }
-
+    
     return {
       ...item,
       numberOfUnits,
@@ -190,9 +204,11 @@ function changeNumberOfUnits(action, id) {
 
   updateCart();
 }
+
 const checkoutbtn = document.querySelector('.checkout')
 checkoutbtn.addEventListener("click",function (params) {
   
+
 
   
   
@@ -233,7 +249,23 @@ checkoutbtn.addEventListener("click",function (params) {
 {/* <button class="back-image backward1" id="backward"><img src="images/backward-arrow.png" class="imagePointer"></button>
 <button class="back-image foreward1" id="foreward"><img src="images/backward-arrow (1).png" class="imagePointer"></button> */}
 
- 
+console.log(cart);
+
+const simplifiedProducts = cart.map(({ name, price, numberOfUnits, size, color }) => ({
+  name,
+  price,
+  numberOfUnits,
+  size,
+  color
+}));
+
+console.log(simplifiedProducts);
+console.log(priceARR);
+
+
+
+
+
 
 
 

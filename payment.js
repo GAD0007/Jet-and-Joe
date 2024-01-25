@@ -1,7 +1,8 @@
+
 const paymentForm = document.getElementById('paymentForm');
 paymentForm.addEventListener("submit", payWithPaystack, false);
 
-document.getElementById("amount").value = 10000
+document.getElementById("amount").value
 
 // function payWithPaystack(e) {
 //   e.preventDefault();
@@ -33,7 +34,7 @@ function payWithPaystack(e) {
   // let cartItems = document.getElementById("cartItems").value; // assuming you have an input field with id "cartItems"
   let firstName = document.getElementById("firstName").value; // assuming you have an input field with id "cartItems"
   let lastName = document.getElementById("lastName").value; // assuming you have an input field with id "cartItems"
-
+let cartSelections = simplifiedProducts
 
   let handler = PaystackPop.setup({
       key: 'pk_test_26faad734a6f3edbc08e9fb637ce1c0b8373ef0c',
@@ -57,7 +58,11 @@ function payWithPaystack(e) {
                   display_name: "last Name",
                   variable_name: "last_name",
                   value: lastName
-              },  {
+              }, {
+                display_name: "Cart Selection",
+                variable_name: "cart_selection",
+                value: cartSelections
+            }, {
               display_name: "First Name",
               variable_name: "first_name",
               value: firstName

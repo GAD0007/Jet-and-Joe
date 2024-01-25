@@ -370,6 +370,11 @@ width: 150px;
     
 
 }
+.offcanvas-header{
+    margin-bottom: -30px !important;
+    margin-top: -2px !important;
+
+}
 
 
 .collapses{
@@ -933,9 +938,21 @@ span.line2{
     width: 40px !important;
     height: 30px !important;
 }
+.note{
+    color: red;
+    font-size: 14px;
+}
 #foreward{
     right: 0px;
 }
+.longer{
+    width: 300px;
+}
+.longer::placeholder {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #888; /* Adjust the color as needed */
+    /* Add any other styling properties you want to customize */
+  }
 #backward{
     left: 0px;
 }
