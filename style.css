@@ -375,6 +375,9 @@ width: 150px;
     margin-top: -2px !important;
 
 }
+.no-blue{
+    text-decoration: none !important;
+}
 
 
 .collapses{
@@ -1853,6 +1856,8 @@ a {
 }
 .cart-footer .checkout {
   background-color: rgb(242, 255, 58);
+  text-decoration: none;
+  color: black;
 
   cursor: pointer;
 }
