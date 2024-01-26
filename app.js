@@ -155,7 +155,8 @@ function renderCartItems() {
   cart.forEach((item) => {
     cartItemsEl.innerHTML += `
       <div class="cart-item">
-      <div class="item-info" onclick="removeItemFromCart(${item.id}, '${item.size}', '${item.color}')">
+      <div class="item-info">
+      
           <img src="${item.imgSrc}" alt="${item.name}">
         </div>
         <div class="unit-price">
@@ -168,9 +169,11 @@ function renderCartItems() {
         </div>
      
       </div>
+
       <div class="item-details">
       <div class="item-name">${item.name}</div>
       <div>Size: ${item.size}, Color: ${item.color}</div>
+      <img src ="images/trash-fill.svg" class = "delete-image" onclick="removeItemFromCart(${item.id}, '${item.size}', '${item.color}')">
     </div>
     `;
   });
