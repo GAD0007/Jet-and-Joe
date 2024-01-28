@@ -71,27 +71,5 @@ const products = [
       instock: 10,
         imgSrc: "images/made-in-ib.png",
       },
-      {
-        id: 9,
-        name: "T-shirt 4",
-        price: 2500.99,
-        instock: 5,
-       imgSrc: "images/IMG_0151.png",
-    },
-    {
-      id: 10,
-      name: "T-shirt 5",
-      price: 2099.99,
-      instock: 4,
-      imgSrc: "images/jungle2.png",
-    },
-    {
-      id: 11,
-      name: "T-shirt 6",
-      price: 3965.99,
-      instock: 40,
-      imgSrc: "images/made-in-ib.png",
-    },
-  
-  
+
 ];
