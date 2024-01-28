@@ -40,13 +40,15 @@ contactBtn.addEventListener("click",function name() {
 // toggle btn
 toggleBtn.addEventListener("click",function (params) {
     document.querySelector('.navigation-small').style.display = "block"
+    document.querySelector('.cart-background').style.display = "none"
+    cartIndex = 0
     // navigationSmall.classList.toggle('show');
-    console.log('clicked');    
+    console.log('clicked in');    
 })
 
 // cancel btn
 cancelBtn.addEventListener("click",function (params) {
-    console.log('clicked');    
+    console.log('clicked out');    
     document.querySelector('.navigation-small').style.display = "none"
 })
 

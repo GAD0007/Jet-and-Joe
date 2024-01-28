@@ -23,6 +23,8 @@ cartBtn.addEventListener("click",function name(params) {
   if (cartIndex == 0) {
     cartIndex ++
     document.querySelector('.cart-background').style.display = "block"
+    document.querySelector('.navigation-small').style.display = "none"
+
     
   } else {
     document.querySelector('.cart-background').style.display = "none"
@@ -55,14 +57,15 @@ function renderProdcuts() {
             <h5>${product.name}</h5>
             <h6 class="mb-3"><small>&#8358;</small>${product.price}</h6>
             <form action="/submit" method="post">
-              <label for="size-${product.id}">size:</label>
-              <select id="size-${product.id}" name="size">
+            <label for="color-${product.id}">color:</label>
+            <select  id="color-${product.id}" name="color">
+              ${colorOptions}
+            </select>
+              <span class="left-margin"></span> <br>
+              
+              <label class="size-box" for="size-${product.id}">size:</label>
+              <select class="size-box"  id="size-${product.id}" name="size">
                 ${sizeOptions}
-              </select>
-              <span class="left-margin"></span>
-              <label for="color-${product.id}">color:</label>
-              <select id="color-${product.id}" name="color">
-                ${colorOptions}
               </select>
               <br>
             </form>
@@ -70,6 +73,7 @@ function renderProdcuts() {
               <img src="images/icon-cart.svg" alt="cart img" class="cart-img"/>
               add to cart
             </div>
+            
           </div>
         </div>
       </div>`;
@@ -135,8 +139,8 @@ function renderSubtotal() {
 
 document.querySelector('.total-price-nav').textContent = totalPrice.toFixed(2)
 
-  priceShow.textContent = `Total Amount = ${Number(totalPrice.toFixed(2)) + 2500}`
-  priceShow1.textContent = `Selection ${Number(totalPrice.toFixed(2))} + Delivery ${2500}`
+  priceShow.textContent = `Total Amount =  ₦${Number(totalPrice.toFixed(2)) +  2500}`
+  priceShow1.textContent = `Selection  ₦${Number(totalPrice.toFixed(2))} + Delivery  ₦${2500}`
 
   priceARR.push(totalPrice.toFixed(2))
 

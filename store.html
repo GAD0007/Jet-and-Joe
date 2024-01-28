@@ -178,7 +178,7 @@
         id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel"
       >
-       <div class="canva-body">
+       <div class="canva-body2">
         <div class="offcanvas-header">
           <div class="offcanvas-title" id="offcanvasExampleLabel"> <span class="about-about">About</span> <br> <span class="j-j-bold">Jet & Joe</span></div>
           <div       
@@ -215,7 +215,9 @@
                 </a>
               </div>
               <div class="mb-5">
-                <button class="shop-btn-small-offcanva">Shop now</button>
+                <a href="store.html"><button class="shop-btn-small-offcanva">Shop now</button></a>
+
+
               </div>
               <div class="logo-jet-box">
                 <img src="images/logo-jet.png" width="150px">
@@ -244,14 +246,14 @@
               <div>
          
                 <p><span class="green-icon"><img src="images/phone-call.png
-                 " width="20px" height="18px" alt="green-icon" class=""></span>Prof. Dr. N.A. Oladoja  LOC Chairman +2348055438642</p>
-                 <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>nurudeen.oladoja@aaua.edu.ng</p>
+                 " width="20px" height="18px" alt="green-icon" class=""></span>Jethro +2349165972686</p>
+                 <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jetnjoe01@gmail.com</p>
                </div>
                <div>
             
                  <p><span class="green-icon"><img src="images/phone-call.png
-                  " width="20px" height="18px" alt="green-icon" class=""></span>Prof. Dr. T.O. Adejumo (Convener) +2348036296127, 08053546526</p>
-                  <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>timothy.adejumo@aaua.edu.ng, tadejum@gwdg.de</p>
+                  " width="20px" height="18px" alt="green-icon" class=""></span>Joseph +2349050016639</p>
+                  <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jtemioluwa7@gmail.com</p>
                 </div>
              
            </div>
@@ -272,7 +274,7 @@
                   </a>
                 </div>
                 <div class="mb-5">
-                  <button class="shop-btn-small-offcanva">Shop now</button>
+                  <a href="store.html"><button class="shop-btn-small-offcanva">Shop now</button></a>
                 </div>
                 <div class="logo-jet-box">
                   <img src="images/logo-jet.png" width="150px">
@@ -296,24 +298,24 @@
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPayment" aria-labelledby="offcanvasPayment">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasPayment">Payment</h5>
+          
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body" style="height: 600px; overflow-y: auto;">
-          <div style="">
+        <div class="offcanvas-body">
           <section class="payment-form">
             <form id="paymentForm">
              <div class="form-group">
                <div class="note">
-               <div>1) Your order wont be processed if the amount paid doesnt match the total amount.</div>
-               <div>2)  Our representative will reach out once your order is made</div>
-               <div>3)  Shop and enjoy the unique styles Jet & Joe has to offer😎👕 </div>
+               <div class="note-text">1) Your order wont be processed if the amount paid doesnt match the total amount.</div>
+               <div class="note-text">2)  Our representative will reach out once your order is made</div>
+              
                </div>
                <label for="email">Email Address</label>
                <br>
                <input type="email" id="email-address" class="longer" placeholder="your receipt will be sent to the email provided" required />
              </div>
              <div class="form-group">
-               <label for="amount">Amount</label>
+               <label class="mt-2" for="amount">Amount</label>
                <br>
                <span class="pricedetailpay1"></span><br>
                <span class="pricedetailpay"></span>
@@ -322,35 +324,34 @@
                <input type="tel" id="amount" class="longer" required />
              </div>
              <div class="form-group">
-               <label for="first-name" >First Name</label>
+               <label class="mt-2" for="first-name" >First Name</label>
                <br>
        
                <input type="text" id="firstName" class="longer" required/>
              </div>
              <div class="form-group">
-               <label for="last-name">Last Name</label>
+               <label class="mt-2" for="last-name">Last Name</label>
                <br>
        
                <input type="text" id="lastName"  class="longer" required />
              </div>
              <div class="form-group">
-               <label for="last-name">Phone Number</label>
+               <label class="mt-2" for="last-name">Phone Number</label>
                <br>
        
                <input type="tel" id="phoneNum" class="longer" required />
              </div>
              <div class="form-group">
-               <label for="Delivery-address">Delivery address</label>
+               <label class="mt-2" for="Delivery-address">Delivery address</label>
                <br>
        
                <input type="text" id="deliveryAddress" class="longer" required/>
              </div>
-             <div class="form-submit">
-               <button type="submit" onclick="payWithPaystack()"> Pay </button>
+             <div class="form-submit mt-2">
+               <button class="pay-btn" type="submit" onclick="payWithPaystack()"> Pay </button>
              </div>
            </form>
           </section>
-        </div>
           
         </div>
       </div>
