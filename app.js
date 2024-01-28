@@ -173,7 +173,7 @@ function renderCartItems() {
       <div class="item-details">
       <div class="item-name">${item.name}</div>
       <div>Size: ${item.size}, Color: ${item.color}</div>
-      <img src ="images/trash-fill.svg" class = "delete-image" onclick="removeItemFromCart(${item.id}, '${item.size}', '${item.color}')">
+      <img src ="images/trash-fill.svg" class = "button delete-image" onclick="removeItemFromCart(${item.id}, '${item.size}', '${item.color}')">
     </div>
     `;
   });
