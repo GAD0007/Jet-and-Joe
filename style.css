@@ -629,7 +629,7 @@ section.F{
 }
 .nav-item7{
     position: absolute;
-    left: 91%;
+    left: 93%;
     top: 13%;
 
 
@@ -655,7 +655,7 @@ section.F{
 }
 .navigations div {
     color: rgb(53, 52, 51);
-    margin-right: 20px;
+    margin-right: 10px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -687,7 +687,7 @@ section.F{
     right: 0%;
     background-color: rgb(250, 245, 245);
     box-shadow: 2px 5px 20px rgb(184, 182, 182);
-    padding: 0.4rem 1rem 1rem 1rem;
+    padding: 0.4rem 0rem 0rem 0.4rem;
     z-index: 5;
 
 }
@@ -2024,6 +2024,27 @@ a {
 
 }
 @media screen and (max-width: 380px) {
+    .delete-image{
+        width: 20px;
+        height: 20px;
+        left: -20px;
+        bottom: 90px;
+        position: relative;
+    }
+    .cart-item .item-info {
+        flex: 1;
+        position: relative;
+        left: 17px;
+        background-color: rgba(255, 255, 255, 0.6);
+      
+        /* border-radius: 0 10px 10px 0; */
+      
+        padding-top: 20px;
+      }
+    *{
+        font-family: 'montserrat';
+        font-size: 12px !important;
+    }
     .cart-footer div {
         display: flex;
         align-items: center;
@@ -2037,7 +2058,7 @@ a {
 
 .cart-background{
     position: absolute;
-    width: 250px;
+    width: 300px;
     /* min-height: 10rem; */
     /* height:fit-content; */
     /* height: 100%; */
@@ -2046,7 +2067,7 @@ a {
     right: 0%;
     background-color: rgb(250, 245, 245);
     box-shadow: 2px 5px 20px rgb(184, 182, 182);
-    padding: 0.4rem 1rem 1rem 1rem;
+    padding: 0.4rem 0rem 0rem 0.4rem;
     z-index: 5;
 
 }
@@ -2115,6 +2136,12 @@ a {
         bottom: 10%;
         margin-left: 5%;
         /* padding-bottom: 10px; */
+    }
+    .nav-item6{
+        position: absolute;
+        left: 77%;
+        top: 15%;
+    
     }
     }
 
