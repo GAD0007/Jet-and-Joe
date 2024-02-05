@@ -2063,10 +2063,7 @@ a {
       
         padding-top: 20px;
       }
-    *{
-        font-family: 'montserrat';
-        font-size: 12px !important;
-    }
+  
     .cart-footer div {
         display: flex;
         align-items: center;
