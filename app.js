@@ -13,9 +13,86 @@ const priceShow1  = document.querySelector('.pricedetailpay1')
 
 let priceArr = []
 let priceARR = []
+let cartshow = 0
+
+
+function sortProductsByType(type) {
+  // Filter products based on the selected type
+  const filteredProducts = products.filter(product => product.type === type);
+
+  // If type is not found, do nothing
+  if (filteredProducts.length === 0) {
+    return;
+  }
+
+  // Clear the existing products before rendering
+  productsEl.innerHTML = "";
+  saveSortingState('tops');
+  saveSortingState('bottoms');
+  saveSortingState('caps');
 
 
 
+
+  // Call the renderProdcuts function to display the sorted products
+  renderProdcuts(filteredProducts);
+}
+
+
+function changeProductImage(productId, direction) {
+  const product = products.find(item => item.id === productId);
+
+  if (product && product.imgSrc instanceof Array) {
+    const imageElement = document.getElementById(`productImage-${productId}`);
+    let currentImageIndex = product.imgIndex || 0;
+
+    if (direction === 'forward') {
+      currentImageIndex = (currentImageIndex + 1) % product.imgSrc.length;
+    } else if (direction === 'backward') {
+      currentImageIndex = (currentImageIndex - 1 + product.imgSrc.length) % product.imgSrc.length;
+    }
+
+    product.imgIndex = currentImageIndex;
+    imageElement.src = product.imgSrc[currentImageIndex];
+  }
+}
+//  sorting key to local storage
+function saveSortingState(sortingKey) {
+  localStorage.setItem('sortingKey', sortingKey);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const savedSortingKey = localStorage.getItem('sortingKey');
+
+  switch (savedSortingKey) {
+    case 'priceLow':
+      sortProductsByPriceLow();
+      break;
+      case 'priceHigh':
+        sortProductsByPriceHigh();
+        break;
+        case 'tops':
+        sortProductsByType('tops');
+        break;
+        case 'bottoms':
+          sortProductsByType('bottoms');
+          break;
+          case 'caps':
+            sortProductsByType('caps');
+            break;
+    case 'mostRecent':
+      sortProductsByMostRecent();
+      break;
+    default:
+      // If no sorting state is found, render the products in their default order
+      resetProductsOrder();
+      productsEl.innerHTML = "";
+      renderProdcuts();
+  }
+});
+
+
+// to control the cart display
 document.querySelector('.cart-background').style.display = "none"
 
 cartBtn.addEventListener("click",function name(params) {
@@ -34,10 +111,39 @@ cartBtn.addEventListener("click",function name(params) {
   
 })
 
+function sortProductsByPriceLow() {
+  products.sort((a, b) => a.price - b.price);
+  saveSortingState('priceLow');
+
+  productsEl.innerHTML = "";
+  renderProdcuts();
+}
+function sortProductsByPriceHigh() {
+  products.sort((a, b) => b.price - a.price);
+  saveSortingState('priceHigh');
+
+  productsEl.innerHTML = "";
+  renderProdcuts();
+}
+
+function sortProductsByMostRecent() {
+  resetProductsOrder();
+  saveSortingState('mostRecent');
+
+  productsEl.innerHTML = "";
+  renderProdcuts();
+}
+
+function resetProductsOrder() {
+  products.sort((a, b) => a.id - b.id);
+  saveSortingState('default');
+}
+
+
 // RENDER PRODUCTS
-function renderProdcuts() {
+function renderProdcuts(productsArray = products) {
   
-  products.forEach((product) => {
+  productsArray.forEach((product) => {
     const { sizes = ["medium", "small", "large", "extra-large"], colors = ["black", "red", "blue", "green"] } = product.options || {};
 
     const sizeOptions = sizes.map((size) => `<option value="${size}">${size}</option>`).join('');
@@ -47,8 +153,9 @@ function renderProdcuts() {
       <div class="item">
         <div class="item-container">
           <div class="item-img">
-            <img src="${product.imgSrc}" alt="${product.name}">
-
+          <div class="button image-switch-button-backward" onclick="changeProductImage(${product.id}, 'backward')"><img src="images/right-arrow (3).png" class="arrow"></div>
+          <img src="${product.imgSrc[0]}" alt="${product.name}" id="productImage-${product.id}">
+          <div class="button image-switch-button-forward" onclick="changeProductImage(${product.id}, 'forward')"><img src="images/right-arrow (2).png" class="arrow"></div>
           </div>
           <div class="desc">
             <div class="add-to-wishlist">
@@ -57,16 +164,17 @@ function renderProdcuts() {
             <h5>${product.name}</h5>
             <h6 class="mb-3"><small>&#8358;</small>${product.price}</h6>
             <form action="/submit" method="post">
-            <label for="color-${product.id}">color:</label>
+            <label class="size-box" for="size-${product.id}">size:</label>
+            <select class="size-box"  id="size-${product.id}" name="size">
+              ${sizeOptions}
+            </select>
+            
+              <span class="left-margin"></span> <br>
+              <label for="color-${product.id}">color:</label>
             <select  id="color-${product.id}" name="color">
               ${colorOptions}
             </select>
-              <span class="left-margin"></span> <br>
-              
-              <label class="size-box" for="size-${product.id}">size:</label>
-              <select class="size-box"  id="size-${product.id}" name="size">
-                ${sizeOptions}
-              </select>
+           
               <br>
             </form>
             <div class="add-to-cart button" onclick="addToCart(${product.id})">
@@ -91,7 +199,12 @@ updateCart();
 // ADD TO CART
 
 function addToCart(id) {
-  document.querySelector('.cart-background').style.display = "block";
+  if (cartshow == 0) {
+    cartshow ++
+    cartIndex = 1
+    document.querySelector('.cart-background').style.display = "block";
+    
+  }
   
   const size = document.getElementById(`size-${id}`).value;
   const color = document.getElementById(`color-${id}`).value;
@@ -161,7 +274,7 @@ function renderCartItems() {
       <div class="cart-item">
       <div class="item-info">
       
-          <img src="${item.imgSrc}" alt="${item.name}">
+          <img src="${item.imgSrc[0]}" alt="${item.name}">
         </div>
         <div class="unit-price">
           <small>&#8358;</small>${item.price}
