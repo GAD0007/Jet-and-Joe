@@ -29,7 +29,7 @@ const products = [
     name: "Made in IB",
     price: 40000,
     instock: 100,
-      imgSrc: ["images/madeinib2.png","images/madeinib3.png","images/madeinib1 (1).png"],
+      imgSrc: ["images/made.png","images/madeinib3.png","images/madeinib1 (1).png"],
       options: {
         sizes: ["M","L","X-L"],
         colors: ["black"],
