@@ -169,13 +169,55 @@
 
      
     </section>
-    
-    <button onclick="sortProductsByPriceLow()">Lowest</button>
-    <button onclick="sortProductsByPriceHigh()">Highest</button>
-<button onclick="sortProductsByMostRecent()">Sort by Most Recent</button>
-<button onclick="sortProductsByType('tops')">Sort Tops</button>
-<button onclick="sortProductsByType('bottoms')">Sort Bottoms</button>
-<button onclick="sortProductsByType('caps')">Sort Caps</button>
+   <!-- <div class="filter-sort">  
+    <div class="sortbox">
+      <div class="sort-show"><span>Sort <img src="images/sort.png" alt=""></span></div><div class="sort-current">Most recent</div>
+      <div class="sort-values">
+        <div class="lowest button" onclick="sortProductsByPriceLow()"> lowest prices</div>
+        <div class="highest button" onclick="sortProductsByPriceHigh()"> Highest prices</div>
+        <div class="default button" onclick="sortProductsByMostRecent()"> Most recent </div>
+
+
+      </div>
+    </div>
+    <div class="sortbox">
+      <div class="sort-show"><span>Filter <img src="images/sort (1).png" alt=""></span></div><div class="filter-current">All items</div>
+      <div class="sort-values">
+        <div class="all button" onclick="sortProductsByAll()"> All items</div>
+        <div class="tops button" onclick="sortProductsByType('tops')"> Tops </div>
+        <div class="bottom button" onclick="sortProductsByType('bottoms')"> Bottoms </div>
+        <div class="caps button" onclick="sortProductsByType('caps')"> Caps </div>
+
+
+      </div>
+    </div>
+     
+  </div>   -->
+<div class="sort-filter">
+  <div class="dropdown">
+    Sort By Price <img src="images/sort.png"> <button class="btn  dropdown-toggle sortBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Default
+     </button>
+     <ul class="dropdown-menu">
+       <li><a class="dropdown-item" href="#" onclick="sortProductsByPriceLow()">lowest prices</a></li>
+       <li><a class="dropdown-item" href="#" onclick="sortProductsByPriceHigh()">Highest prices</a></li>
+       <li><a class="dropdown-item" href="#" onclick="sortProductsByMostRecent()">Default</a></li>
+ 
+     </ul>
+   </div>
+   <div class="dropdown">
+     Filter <img src="images/sort (1).png"> <button class="btn  dropdown-toggle filterBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        All
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item AllBtn" href="#"  onclick="sortProductsByAll('tops')">All</a></li>
+        <li><a class="dropdown-item TopsBtn" href="#"  onclick="sortProductsByType('tops')">Tops</a></li>
+        <li><a class="dropdown-item BottomsBtn" href="#" onclick="sortProductsByType('bottoms')">Bottoms</a></li>
+        <li><a class="dropdown-item CapsBtn" href="#" onclick="sortProductsByType('caps')">Caps</a></li>
+  
+      </ul>
+    </div>
+</div>
 
     <section class="absolute-canvas">
      

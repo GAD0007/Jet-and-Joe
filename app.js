@@ -8,7 +8,50 @@ const cartBtn = document.querySelector(".nav-item7");
 const payAmount = document.getElementById("amount")
 const priceShow  = document.querySelector('.pricedetailpay')
 const priceShow1  = document.querySelector('.pricedetailpay1')
+const sortBtn  = document.querySelector('.sortBtn')
+const topsBtn  = document.querySelector('.TopsBtn')
+const bottomsBtn  = document.querySelector('.BottomsBtn')
+const capsBtn  = document.querySelector('.CapsBtn')
+const allBtn  = document.querySelector('.AllBtn')
+const filterBtn  = document.querySelector('.filterBtn')
 
+
+
+topsBtn.addEventListener("click",function name(params) {
+  console.log('tops');
+filterBtn.textContent = 'Tops'
+
+  
+  
+})
+bottomsBtn.addEventListener("click",function name(params) {
+  console.log('bottom');
+filterBtn.textContent = 'Buttoms'
+
+  
+  
+})
+capsBtn.addEventListener("click",function name(params) {
+  console.log('caps');
+filterBtn.textContent = 'Caps'
+
+  
+  
+})
+allBtn.addEventListener("click",function name(params) {
+  console.log('allbtn');
+filterBtn.textContent = 'All'
+
+  
+  
+})
+
+
+sortBtn.addEventListener("click",function name(params) {
+  
+  
+  
+})
 
 
 let priceArr = []
@@ -19,7 +62,7 @@ let cartshow = 0
 function sortProductsByType(type) {
   // Filter products based on the selected type
   const filteredProducts = products.filter(product => product.type === type);
-
+  console.log(filteredProducts);
   // If type is not found, do nothing
   if (filteredProducts.length === 0) {
     return;
@@ -27,9 +70,7 @@ function sortProductsByType(type) {
 
   // Clear the existing products before rendering
   productsEl.innerHTML = "";
-  saveSortingState('tops');
-  saveSortingState('bottoms');
-  saveSortingState('caps');
+
 
 
 
@@ -71,15 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
       case 'priceHigh':
         sortProductsByPriceHigh();
         break;
-        case 'tops':
-        sortProductsByType('tops');
-        break;
-        case 'bottoms':
-          sortProductsByType('bottoms');
-          break;
-          case 'caps':
-            sortProductsByType('caps');
-            break;
     case 'mostRecent':
       sortProductsByMostRecent();
       break;
@@ -114,6 +146,10 @@ cartBtn.addEventListener("click",function name(params) {
 function sortProductsByPriceLow() {
   products.sort((a, b) => a.price - b.price);
   saveSortingState('priceLow');
+sortBtn.textContent = 'Lowest'
+filterBtn.textContent = 'All'
+
+
 
   productsEl.innerHTML = "";
   renderProdcuts();
@@ -121,6 +157,10 @@ function sortProductsByPriceLow() {
 function sortProductsByPriceHigh() {
   products.sort((a, b) => b.price - a.price);
   saveSortingState('priceHigh');
+sortBtn.textContent = 'Highest'
+filterBtn.textContent = 'All'
+
+
 
   productsEl.innerHTML = "";
   renderProdcuts();
@@ -129,6 +169,20 @@ function sortProductsByPriceHigh() {
 function sortProductsByMostRecent() {
   resetProductsOrder();
   saveSortingState('mostRecent');
+sortBtn.textContent = 'Default'
+filterBtn.textContent = 'All'
+
+
+
+  productsEl.innerHTML = "";
+  renderProdcuts();
+}
+
+function sortProductsByAll() {
+  resetProductsOrder();
+  // saveSortingState('mostRecent');
+filterBtn.textContent = 'All'
+
 
   productsEl.innerHTML = "";
   renderProdcuts();
@@ -138,6 +192,8 @@ function resetProductsOrder() {
   products.sort((a, b) => a.id - b.id);
   saveSortingState('default');
 }
+
+
 
 
 // RENDER PRODUCTS

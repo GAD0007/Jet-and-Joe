@@ -1405,6 +1405,82 @@ a {
 .product img {
   width: 100%;
 }
+.sortbox{
+    display: flex;
+    width: fit-content;
+    margin: 3px 20px;
+    
+}
+.filterimg{
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+.filter-current{
+    position: relative;
+}
+.sort-filter{
+    display: flex;
+    position: sticky;
+    top: 45px;
+    z-index: 100000;
+    background-color: white;
+
+}
+.dropdown-item:hover{
+    background-color: rgb(233, 41, 41) !important;
+}
+.sortBtn{
+ /* outline: none !important; */
+ box-shadow: none !important;
+    
+}
+.filterBtn{
+    /* outline: none !important; */
+    box-shadow: none !important;
+       
+   }
+
+.dropdown{
+    margin-left: 20px;
+}
+.sort-values{
+    /* display: none; */
+    position: absolute;
+    background-color: rgb(226, 223, 223);
+    width: fit-content;
+    padding: 9px;
+    z-index: 100000;
+    /* left: 80px; */
+}
+.sort-values2{
+    display: none;
+    position: absolute;
+    background-color: rgb(226, 223, 223);
+    width: fit-content;
+    padding: 9px;
+    z-index: 100000;
+    right: 2%;
+    top: 110%;
+}
+.sort-current{
+    /* display: flex; */
+    background-color: white;
+    padding: 5px 10px;
+    /* margin-left: 10px; */
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+}
+.filter-current{
+    background-color: white;
+    padding: 5px 10px;
+    /* margin-left: 10px; */
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+}
+
 
 
 

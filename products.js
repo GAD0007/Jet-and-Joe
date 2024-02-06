@@ -69,7 +69,7 @@ const products = [
     name: "0203 Shorts",
     price: 25000,
     instock: 100,
-    imgSrc: ["images/0203shortsblack.png","images/0203shorts3.png","images/inyourhands1.png","images/0203shortsblack1.png"],
+    imgSrc: ["images/0203shortsblack.png","images/inyourhands1.png","images/shorts10.png"],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["white","blue",,"black"],
@@ -91,34 +91,48 @@ const products = [
       },
       type:"tops",
     },
-    // {
-    //   id: 7,
-    //   name: "Alien Invasion",
-    //   price: 2350.99,
-    //   instock: 43,
-    //   imgSrc: [""],
-    //   options: {
-    //     sizes: ["M","L","X-L"],
-    //     colors: ["blue", "green","white","red","black"],
+    {
+      id: 7,
+      name: "Lion King",
+      price: 35000,
+      instock: 1000,
+      imgSrc: ["images/lion.png","images/lion (1).png","images/lion10.png"],
+      options: {
+        sizes: ["M","L","X-L"],
+        colors: ["orange", "white","black",],
        
-    //   },
-    //   type:"tops",
+      },
+      type:"tops",
 
-    // },
-    // {
-    //   id: 8,
-    //   name: "Made in IB",
-    //   price: 1900.99,
-    //   instock: 10,
-    //     imgSrc: ["",],
-    //     options: {
-    //       sizes: ["M","L","X-L"],
-    //       colors: ["blue", "green","white","red","black"],
+    },
+    {
+      id: 8,
+      name: "pants",
+      price: 1900.99,
+      instock: 100,
+        imgSrc: ["images/J23 - Copy.jpg","images/pantsss.png","images/pants2.png"],
+        options: {
+          sizes: ["M","L","X-L"],
+          colors: ["grey"],
          
-    //     },
-    //     type:"tops",
+        },
+        type:"bottoms",
 
        
-    //   },
-
+      },
+      {
+        id: 9,
+        name: "Sweatpants",
+        price: 1900.99,
+        instock: 100,
+          imgSrc: ["images/sweatpants.png"],
+          options: {
+            sizes: ["M","L","X-L"],
+            colors: ["grey"],
+           
+          },
+          type:"bottoms",
+  
+         
+        },
 ];
