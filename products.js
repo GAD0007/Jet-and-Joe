@@ -91,48 +91,48 @@ const products = [
       },
       type:"tops",
     },
-    // {
-    //   id: 7,
-    //   name: "Lion King",
-    //   price: 35000,
-    //   instock: 1000,
-    //   imgSrc: ["images/lion.png","images/lion (1).png","images/lion10.png"],
-    //   options: {
-    //     sizes: ["M","L","X-L"],
-    //     colors: ["orange", "white","black",],
+    {
+      id: 7,
+      name: "Lion King",
+      price: 35000,
+      instock: 1000,
+      imgSrc: ["images/lion.png","images/lion (1).png","images/lion10.png"],
+      options: {
+        sizes: ["M","L","X-L"],
+        colors: ["orange", "white","black",],
        
-    //   },
-    //   type:"tops",
+      },
+      type:"tops",
 
-    // },
-    // {
-    //   id: 8,
-    //   name: "pants",
-    //   price: 1900.99,
-    //   instock: 100,
-    //     imgSrc: ["images/J23 - Copy.jpg","images/pantsss.png","images/pants2.png"],
-    //     options: {
-    //       sizes: ["M","L","X-L"],
-    //       colors: ["grey"],
+    },
+    {
+      id: 8,
+      name: "pants",
+      price: 1900.99,
+      instock: 100,
+        imgSrc: ["images/J23 - Copy.jpg","images/pantsss.png","images/pants2.png"],
+        options: {
+          sizes: ["M","L","X-L"],
+          colors: ["grey"],
          
-    //     },
-    //     type:"bottoms",
+        },
+        type:"bottoms",
 
        
-    //   },
-    //   {
-    //     id: 9,
-    //     name: "Sweatpants",
-    //     price: 1900.99,
-    //     instock: 100,
-    //       imgSrc: ["images/sweatpants.png"],
-    //       options: {
-    //         sizes: ["M","L","X-L"],
-    //         colors: ["grey"],
+      },
+      {
+        id: 9,
+        name: "Sweatpants",
+        price: 1900.99,
+        instock: 100,
+          imgSrc: ["images/sweatpants.png"],
+          options: {
+            sizes: ["M","L","X-L"],
+            colors: ["grey"],
            
-    //       },
-    //       type:"bottoms",
+          },
+          type:"bottoms",
   
          
-    //     },
+        },
 ];
