@@ -26,6 +26,22 @@ const products = [
   },
   {
     id: 2,
+    name: "Caps",
+    price: 25000,
+    instock: 100,
+      imgSrc: ["images/caps1.png","images/caps2.png","images/WOG3.png","images/Tanktop3.png","images/IMG_9741_2-removebg-preview.png"],
+      options: {
+        sizes: ["M"],
+        colors: ["red","blue","purple","black","brown"],
+       
+      },
+      type:"caps",
+    
+
+     
+    },
+  {
+    id: 3,
     name: "Made in IB",
     price: 40000,
     instock: 100,
@@ -38,7 +54,7 @@ const products = [
       type:"tops",
     },
     {
-      id: 3,
+      id: 4,
       name: "Sweatshirt",
       price: 40000,
       instock: 100,
@@ -52,7 +68,7 @@ const products = [
      
   },
   {
-    id: 4,
+    id: 5,
     name: "Black & Orange Shorts",
     price: 25000,
     instock: 100,
@@ -65,7 +81,7 @@ const products = [
   
   },
   {
-    id: 5,
+    id: 6,
     name: "0203 Shorts",
     price: 25000,
     instock: 100,
@@ -79,7 +95,7 @@ const products = [
   },
  
     {
-      id: 6,
+      id: 7,
       name: "Tanktop",
       price: 35000,
       instock: 100,
@@ -92,7 +108,7 @@ const products = [
       type:"tops",
     },
     {
-      id: 7,
+      id: 8,
       name: "Lion King",
       price: 35000,
       instock: 1000,
@@ -105,21 +121,7 @@ const products = [
       type:"tops",
 
     },
-    {
-      id: 8,
-      name: "pants",
-      price: 1900.99,
-      instock: 100,
-        imgSrc: ["images/J23 - Copy.jpg","images/pantsss.png","images/pants2.png"],
-        options: {
-          sizes: ["M","L","X-L"],
-          colors: ["grey"],
-         
-        },
-        type:"bottoms",
-
-       
-      },
+   
       {
         id: 9,
         name: "Sweatpants",
@@ -128,11 +130,42 @@ const products = [
           imgSrc: ["images/sweatpants.png"],
           options: {
             sizes: ["M","L","X-L"],
-            colors: ["grey"],
+            colors: ["black"],
            
           },
           type:"bottoms",
   
          
         },
+        {
+          id: 10,
+          name: "pants",
+          price: 1900.99,
+           instock: 100,
+            imgSrc: ["images/J23 - Copy.jpg","images/linedpants.png","images/pantsss.png","images/pants2.png"],
+           options: {
+           sizes: ["M","L","X-L"],
+          colors: ["grey"],
+       
+      },
+      type:"bottoms",
+         
+    
+           
+          },
+        {
+          id: 11,
+          name: "JxJ Pants",
+          price: 1900.99,
+          instock: 100,
+            imgSrc: ["images/styledpants1.png","images/J4 (1).png"],
+            options: {
+              sizes: ["M","L","X-L"],
+              colors: ["black"],
+             
+            },
+            type:"bottoms",
+    
+           
+          },
 ];
