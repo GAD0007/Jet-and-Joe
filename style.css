@@ -1420,10 +1420,11 @@ a {
     position: relative;
 }
 .sort-filter{
+    /* visibility:hidden; */
     display: flex;
     position: sticky;
     top: 45px;
-    z-index: 100000;
+    z-index: 200000;
     background-color: white;
 
 }
@@ -1684,6 +1685,7 @@ a {
 }
 .offcanvas{
     background-color: red;
+    z-index: 300000 !important;
 }
 .desc{
     position: relative;

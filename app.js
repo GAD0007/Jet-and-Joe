@@ -14,6 +14,9 @@ const bottomsBtn  = document.querySelector('.BottomsBtn')
 const capsBtn  = document.querySelector('.CapsBtn')
 const allBtn  = document.querySelector('.AllBtn')
 const filterBtn  = document.querySelector('.filterBtn')
+const visiFilter =  document.querySelector('.sort-filter')
+visiFilter.style.visibility = "visible";
+
 
 
 
@@ -380,9 +383,32 @@ function changeNumberOfUnits(action, id) {
 
   updateCart();
 }
+// const closebtnmodal = document.querySelector('.close-modal-1')
+// closebtnmodal.addEventListener("click",function (params) {
+//   visiFilter.style.visibility = "visible";
+  
+//     console.log('check');
+    
+    
+  
+  
+    
+    
+    
+//   })
 
-const checkoutbtn = document.querySelector('.checkout')
+// const list = document.querySelector('body')
+// list.addEventListener("click",function (params) {
+// visiFilter.style.visibility = "visible";
+
+// })
+
+const checkoutbtn = document.querySelector('.no-blue')
 checkoutbtn.addEventListener("click",function (params) {
+// visiFilter.style.visibility = "hidden";
+
+  console.log('check');
+  
   
 
 
