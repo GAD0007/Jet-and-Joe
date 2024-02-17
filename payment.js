@@ -37,7 +37,7 @@ function payWithPaystack(e) {
 let cartSelections = simplifiedProducts
 
   let handler = PaystackPop.setup({
-      key: 'pk_test_26faad734a6f3edbc08e9fb637ce1c0b8373ef0c',
+      key: 'pk_live_5a31b667019b9a3ed5457c3f186040a1d1304511',
       email: document.getElementById("email-address").value,
       amount: document.getElementById("amount").value * 100,
       currency: "NGN",

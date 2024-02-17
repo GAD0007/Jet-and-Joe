@@ -308,8 +308,8 @@ function renderSubtotal() {
 
 document.querySelector('.total-price-nav').textContent = totalPrice.toFixed(2)
 
-  priceShow.textContent = `Total Amount =  ₦${Number(totalPrice.toFixed(2)) +  2500}`
-  priceShow1.textContent = `Selection  ₦${Number(totalPrice.toFixed(2))} + Delivery  ₦${2500}`
+  priceShow.textContent = `Total Amount =  ₦${Number(totalPrice.toFixed(2)) +  5000}`
+  priceShow1.textContent = `Selection  ₦${Number(totalPrice.toFixed(2))} + Delivery  ₦${5000}`
 
   priceARR.push(totalPrice.toFixed(2))
 
