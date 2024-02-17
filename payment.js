@@ -75,6 +75,7 @@ let cartSelections = simplifiedProducts
       callback: function (response) {
           let message = 'Payment complete! Reference: ' + response.reference;
           alert(message);
+          window.location.href = 'https://www.instagram.com/jetandjoe?igsh=MTlkdDYyYWZyZzFiYQ==';
       }
   });
 
