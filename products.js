@@ -14,9 +14,9 @@ const products = [
   {
     id: 1,
     name: "Hoodie",
-    price: 35000,
+    price: 45000,
     instock: 100,
-    imgSrc: ["images/hoodie.png", "images/inyourhands2.png" ],
+    imgSrc: ["images/hoodie.png","images/DSC_0420.png","images/DSC_0604 (1).png", "images/DSC_0585 (1).png" ],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["black","brown"],
@@ -25,10 +25,10 @@ const products = [
   },
   {
     id: 2,
-    name: "0204 sweatpants",
-    price: 35000,
+    name: "0204 pants",
+    price: 45000,
     instock: 100,
-    imgSrc: ["images/sweatpantsnew.png","images/jjj.png", "images/DSC_0617.png" ],
+    imgSrc: ["images/sweatpantsnew.png","images/pants-0204.png","images/DSC_0585 (1).png", "images/DSC_0617.png" ],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["black","grey"],
@@ -37,6 +37,21 @@ const products = [
   },
   {
     id: 3,
+    name: "Alien Wear",
+    price: 35000,
+    instock: 100,
+      imgSrc: ["images/DSC_0453.png"],
+      options: {
+        sizes: ["M","L","X-L"],
+        colors: ["black"],
+       
+      },
+      type:"tops",
+
+     
+    },
+  {
+    id: 4,
     name: "World In Your Hands",
     price: 35000,
     instock: 100,
@@ -48,7 +63,7 @@ const products = [
      type:"tops",
   },
   {
-    id: 4,
+    id: 5,
     name: "Work of God",
     price: 35000,
     instock: 100,
@@ -61,7 +76,7 @@ const products = [
     type:"tops",
   },
   {
-    id: 5,
+    id: 6,
     name: "Caps",
     price: 25000,
     instock: 100,
@@ -77,7 +92,7 @@ const products = [
      
     },
   {
-    id: 6,
+    id: 7,
     name: "Made in IB",
     price: 40000,
     instock: 100,
@@ -90,7 +105,7 @@ const products = [
       type:"tops",
     },
     {
-      id: 7,
+      id: 8,
       name: "Sweatshirt",
       price: 40000,
       instock: 100,
@@ -104,7 +119,7 @@ const products = [
      
   },
   {
-    id: 8,
+    id: 9,
     name: "Black & Orange Shorts",
     price: 25000,
     instock: 100,
@@ -117,7 +132,7 @@ const products = [
   
   },
   {
-    id: 9,
+    id: 10,
     name: "0203 Shorts",
     price: 25000,
     instock: 100,
@@ -131,7 +146,7 @@ const products = [
   },
  
     {
-      id: 10,
+      id: 11,
       name: "Tanktop",
       price: 35000,
       instock: 100,
@@ -144,7 +159,7 @@ const products = [
       type:"tops",
     },
     {
-      id: 11,
+      id: 12,
       name: "Lion King",
       price: 35000,
       instock: 1000,
@@ -159,11 +174,11 @@ const products = [
     },
    
       {
-        id: 12,
+        id: 13,
         name: "Sweatpants",
-        price: 19000.99,
+        price: 45000,
         instock: 100,
-          imgSrc: ["images/sweatpants.png"],
+          imgSrc: ["images/sweatpants1.png","images/sweatpants.png"],
           options: {
             sizes: ["M","L","X-L"],
             colors: ["black"],
@@ -174,11 +189,11 @@ const products = [
          
         },
         {
-          id: 13,
+          id: 14,
           name: "pants",
-          price: 1900.99,
+          price: 45000,
            instock: 100,
-            imgSrc: ["images/J23 - Copy.jpg","images/linedpants.png","images/pantsss.png","images/pants2.png"],
+            imgSrc: ["images/J23 - Copy (1).png","images/linedpants.png","images/pantsss.png","images/pants2.png"],
            options: {
            sizes: ["M","L","X-L"],
           colors: ["grey"],
@@ -190,11 +205,11 @@ const products = [
            
           },
         {
-          id: 14,
+          id: 15,
           name: "JxJ Pants",
-          price: 1900.99,
+          price: 40000,
           instock: 100,
-            imgSrc: ["images/styledpants1.png","images/J4 (1).png"],
+            imgSrc: ["images/IMG_9765~2 (1).png","images/pantsJET.png","images/styledpants1.png"],
             options: {
               sizes: ["M","L","X-L"],
               colors: ["black"],
@@ -203,5 +218,22 @@ const products = [
             type:"bottoms",
     
            
-          },
-];
+          }, 
+          {
+            id: 16,
+            name: "JxJ Shirt",
+            price: 30000,
+            instock: 100,
+              imgSrc: ["images/IMG_9853~2.png","images/IMG_9859~2.png"],
+              options: {
+                sizes: ["M","L","X-L"],
+                colors: ["black"],
+               
+              },
+              type:"tops",
+      
+             
+            },
+            
+  ];
+
