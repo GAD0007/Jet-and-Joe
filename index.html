@@ -8,6 +8,25 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <!-- bootstrap file -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/VwDrggyRBbtippRI/',
+        type:'post',
+        data:$("#subscribeformails").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
     <style>
       .home-nav{
         border-bottom: 2px solid white;
@@ -603,15 +622,16 @@
             </div>
             <div class="subscribe form">
               <p class="sub-news">Subscribe to our mailing List</p>
-              <form action="#">
+              <form id="subscribeformails" action="#">
                 <div class="input-group">
                   <input
+                  name="subscriber-mail"
                     type="email"
                     class="email-for-deals"
                     id="enter-email"
                     placeholder="Enter your email"
                   />
-                  <button type="submit" class="subscription-button">
+                  <button type="submit" class="subscription-button" onclick="SubForm()">
                     subscribe
                   </button>
                 </div>
