@@ -40,7 +40,7 @@ const products = [
     name: "Alien Wear",
     price: 35000,
     instock: 100,
-      imgSrc: ["images/DSC_0453.png"],
+      imgSrc: ["images/DSC_0453 (1) (1).png"],
       options: {
         sizes: ["M","L","X-L"],
         colors: ["black"],
