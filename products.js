@@ -25,7 +25,7 @@ const products = [
   },
   {
     id: 2,
-    name: "0204 pants",
+    name: "Joggers",
     price: 45000,
     instock: 100,
     imgSrc: ["images/sweatpantsnew.png","images/pants-0204.png","images/DSC_0585 (1).png", "images/DSC_0617.png" ],
@@ -160,7 +160,7 @@ const products = [
     },
     {
       id: 12,
-      name: "Lion King",
+      name: "Roar '23 Shirts",
       price: 35000,
       instock: 1000,
       imgSrc: ["images/lion.png","images/lion (1).png","images/lion10.png"],
