@@ -16,7 +16,7 @@ const products = [
     name: "Hoodie",
     price: 45000,
     instock: 100,
-    imgSrc: ["images/hoodie.png","images/DSC_0420.png","images/DSC_0604 (1).png", "images/DSC_0585 (1).png" ],
+    imgSrc: ["images/9899.png","images/hoodie.png","images/DSC_0604 (1).png", "images/DSC_0585 (1).png" ],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["black","brown"],
@@ -25,10 +25,10 @@ const products = [
   },
   {
     id: 2,
-    name: "Joggers",
+    name: "Pants",
     price: 45000,
     instock: 100,
-    imgSrc: ["images/sweatpantsnew.png","images/pants-0204.png","images/DSC_0585 (1).png", "images/DSC_0617.png" ],
+    imgSrc: ["images/sweatpantsnew.png","images/DSC_0385 (1).png","images/DSC_0602.png","images/DSC_0550 (1).png","images/DSC_0555.png","images/pants-0204.png","images/DSC_0585 (1).png", "images/DSC_0617.png" ],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["black","grey"],
@@ -58,7 +58,7 @@ const products = [
     imgSrc: ["images/inyourhands1.png", "images/inyourhands2.png" ],
     options: {
       sizes: ["M","L","X-L"],
-      colors: ["white"],
+      colors: ["black","red","blue","orange","white"],
     },
      type:"tops",
   },
@@ -134,7 +134,7 @@ const products = [
   {
     id: 10,
     name: "0203 Shorts",
-    price: 25000,
+    price: 35000,
     instock: 100,
     imgSrc: ["images/0203shortsblack.png","images/inyourhands1.png","images/shorts10.png"],
     options: {
@@ -175,7 +175,7 @@ const products = [
    
       {
         id: 13,
-        name: "Sweatpants",
+        name: "Roar '23 Joggers",
         price: 45000,
         instock: 100,
           imgSrc: ["images/sweatpants1.png","images/sweatpants.png"],
@@ -190,7 +190,7 @@ const products = [
         },
         {
           id: 14,
-          name: "pants",
+          name: "Striped Denim pants",
           price: 45000,
            instock: 100,
             imgSrc: ["images/J23 - Copy (1).png","images/linedpants.png","images/pantsss.png","images/pants2.png"],
@@ -206,10 +206,10 @@ const products = [
           },
         {
           id: 15,
-          name: "JxJ Pants",
+          name: "JxJ Denim Pants",
           price: 40000,
           instock: 100,
-            imgSrc: ["images/IMG_9765~2 (1).png","images/pantsJET.png","images/styledpants1.png"],
+            imgSrc: ["images/designerpants.png","images/IMG_9861~2.png","images/styledpants1.png"],
             options: {
               sizes: ["M","L","X-L"],
               colors: ["black"],
@@ -221,10 +221,10 @@ const products = [
           }, 
           {
             id: 16,
-            name: "JxJ Shirt",
+            name: "JxJ Denim Shirt",
             price: 30000,
             instock: 100,
-              imgSrc: ["images/IMG_9853~2.png","images/IMG_9859~2.png"],
+              imgSrc: ["images/IMG_9859~2.png","images/denimmm.jpg","images/IMG_9760~2.png"],
               options: {
                 sizes: ["M","L","X-L"],
                 colors: ["black"],
