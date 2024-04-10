@@ -28,7 +28,7 @@ const products = [
     name: "Pants",
     price: 45000,
     instock: 100,
-    imgSrc: ["images/sweatpantsnew.png","images/DSC_0385 (1).png","images/DSC_0602.png","images/DSC_0550 (1).png","images/DSC_0555.png","images/pants-0204.png","images/DSC_0585 (1).png", "images/DSC_0617.png" ],
+    imgSrc: ["images/DSC_0550 (1).png","images/jety.jpg" ,"images/jetx.jpg","images/pants-0204.png"],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["black","grey"],
@@ -234,6 +234,21 @@ const products = [
       
              
             },
+            {
+              id: 17,
+              name: "Joggers",
+              price: 45000,
+              instock: 100,
+                imgSrc: ["images/DSC_0385 (1).png","images/DSC_0602 (1).png","images/sweatpantsnew.png","images/DSC_0602.png","images/DSC_0585 (1).png", "images/DSC_0555.png","images/DSC_0617.png"],
+                options: {
+                  sizes: ["M","L","X-L"],
+                  colors: ["black","grey"],
+                 
+                },
+                type:"bottoms",
+        
+               
+              },
             
   ];
 
