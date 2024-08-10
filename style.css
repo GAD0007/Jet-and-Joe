@@ -68,12 +68,9 @@ section.A{
     position: absolute;
     height: 480px;
     width: 100%;
-    transition: opacity 3s ease-in; /* Smooth transition for opacity */
-    opacity: 0; /* Start hidden */
+    
 }
-.back-img.show {
-    opacity: 1; /* Show the image */
-}
+
 section.BG{
     position: relative;
     width: 100%;
@@ -893,6 +890,7 @@ h5{
 }
 h6.ex{
     font-weight: bolder;
+    color: rgb(214, 177, 75);
 }
 .delete-btn{
     position: absolute;
@@ -929,6 +927,7 @@ h3.gap{
     margin-bottom: 20px;
     font-weight: bold;
     font-size:4rem;
+    color: white;
     
 }
 .whyy{
