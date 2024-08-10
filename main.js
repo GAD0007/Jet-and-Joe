@@ -4,6 +4,45 @@ const cancelBtn = document.querySelector('.cancel-btn')
 const contactBtn= document.getElementById('contact-btn')
 const aboutBtn= document.getElementById('about-btn')
 
+
+
+
+// Array of image paths
+const images = [
+  'images/Untitled design (2).png',
+  // 'images/Untitled design (1).png',
+  'images/Untitled design (3).png',
+  'images/Untitled design.png',
+  'images/Untitled design (4).png'
+];
+
+let currentImageIndex = 0; // Start with the first image
+
+// Function to change the image source with a transition
+function changeImage() {
+  const imgElement = document.getElementById('background-image');
+  
+  // Fade out the current image
+  imgElement.classList.remove('show');
+  
+  setTimeout(() => {
+      // Update the src attribute with the next image in the array after fading out
+      imgElement.src = images[currentImageIndex];
+      
+      // Fade in the new image
+      imgElement.classList.add('show');
+      
+      // Increment the index to the next image, loop back if needed
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+  }, 2000); // Timeout should match the transition duration in the CSS
+}
+
+// Initial image load with a fade-in
+document.getElementById('background-image').classList.add('show');
+
+// Change image every 5 seconds
+setInterval(changeImage, 5000);
+
 window.onscroll = function() {
     showScrollButton();
   };
