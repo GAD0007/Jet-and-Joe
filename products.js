@@ -149,7 +149,7 @@ const products = [
   {
     id: 12,
     name: "Caps",
-    price: 25000,
+    price: 35000,
     instock: 100,
       imgSrc: ["images/caps1.png","images/caps2.png","images/WOG3.png","images/Tanktop3.png","images/IMG_9741_2-removebg-preview.png"],
       options: {
